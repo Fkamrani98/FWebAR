@@ -1,0 +1,174 @@
+<html lang="en">
+
+<head>
+    <title>Sign up / Login Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link as="style" rel="preload" href="../base.css" />
+    <link as="style" rel="preload" href="../common.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="stylesheet" href="../common.css" />
+    <link rel="stylesheet" href="stylelogin.css">
+
+    <script defer="module" src="scriptlogin.js"></script>
+    <script defer="" src="../cacheme-main-528d64d23ea1fe262bb9.js"></script>
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navmobile">
+        <div class="navmobile__inner">
+            <div class="navmobile__top">
+                <div class="navmobile__button"><span class="navmobile__button-line1"></span><span
+                        class="navmobile__button-line2"></span></div>
+                <ul class="navmobile__menu">
+                    <li onclick="showLogin()">Login</li>
+                    <li onclick="showSignup()">Sign up</li>
+                    <li onclick="showForgotPassword()">Forgot password</li>
+                    <li onclick="showSubscribe()">Subscribe</li>
+                    <li onclick="showContactUs()">Contact us</li>
+                </ul>
+            </div>
+            <div class="navmobile__bottom btngroup --full">
+                <div class="btn --transparent --line"><a href="../index.html">Home</a></div>
+                <div class="btn book-demo"><a href="#calendly"><strong>Get Started</strong></a></div>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="header__right">
+                    <ul class="header__nav">
+                        <li><a class="active" href="/">Home</a></li>
+                        <li onclick="showLogin()"><a class="active">Login</a></li>
+                        <li onclick="showSignup()"><a class="active">Sign up</a></li>
+                        <li onclick="showForgotPassword()"><a class="active">Forgot password</a></li>
+                        <li onclick="showSubscribe()"><a class="active">Subscribe</a></li>
+                        <li onclick="showContactUs()"><a class="active">Contact us</a></li>
+                    </ul>
+                    <div class="header__divide"></div>
+                    <div class="header__btnmenu"><span></span><span></span><span></span></div>
+                    <div class="header__login">
+                        <div class="btngroup">
+                            <div class="btn --small"><a id="navbar-signup" href=" "><strong>Get
+                                        Started</strong></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper2">
+            <div class="rec-prism">
+                <div class="face face-top">
+                    <div class="content">
+                        <h2>Subscribe</h2>
+                        <small>Enter your email so we can send you the latest updates!</small>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input type="text" name="email" placeholder="email">
+                                <label>e-mail</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showThankYou()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-front">
+                    <div class="content">
+                        <h2>Sign in</h2>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input type="text" name="username" placeholder="username">
+                                <label>username</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="password" name="password" placeholder="password"
+                                    autocomplete="new-password">
+                                <label>password</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showThankYou()">
+                            </div>
+                            <span class="psw" onclick="showForgotPassword()">Forgot Password? </span>
+                            <span class="signup" onclick="showSignup()">Not a user? Sign up</span>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-back">
+                    <div class="content">
+                        <h2>Forgot your password?</h2>
+                        <small>Enter your email so we can send you a reset link for your password</small>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input type="text" name="email" placeholder="email">
+                                <label>e-mail</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showThankYou()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-right">
+                    <div class="content">
+                        <h2>Sign up</h2>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input type="text" name="email" placeholder="email">
+                                <label>e-mail</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="password" name="password" placeholder="password"
+                                    autocomplete="new-password">
+                                <label>password</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="password" name="password2" placeholder="password"
+                                    autocomplete="new-password">
+                                <label>re-enter password</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showThankYou()">
+                            </div>
+                            <span class="singin" onclick="showLogin()">Already a user? Sign in</span>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-left">
+                    <div class="content">
+                        <h2>Contact us</h2>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input type="text" name="name" placeholder="name">
+                                <label>Name</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="text" name="email" placeholder="email">
+                                <label>e-mail</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <textarea placeholder="your message"></textarea>
+                                <label>your message</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showThankYou()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-bottom">
+                    <div class="content">
+                        <div class="thank-you-msg">
+                            Thank you!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
