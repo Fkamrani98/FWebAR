@@ -24,13 +24,16 @@
   --gap: 30px;
 }
 
-.hide {
+
+#hide {
   display: none;
+  font-size: 3rem;
+  text-align: right;
 }
     
-.myDIV:hover + .hide {
+#myDIV:hover + .hide {
   display: block;
-  color: red;
+  color: rgb(176, 70, 70);
 }
 
 .dropbtn {
@@ -76,19 +79,27 @@
   border: none;
   background: none;
   width: 100%;
-  text-align: left;
+  text-align: right;
   cursor: pointer;
   outline: none;
+  font-family: sans-serif;
 }
 
+.sty{
+  color: #ffffff99;
+  font: 16px;
+  font-family: sans-serif;
+}
 
 .active {
   color: white;
 }
 
 .dropdown-container {
+  text-decoration:none ;
   display: none;
   padding-left: 8px;
+  text-align: right;
 }
 
 .fa-caret-down {
@@ -98,7 +109,7 @@
 
 .bn632-hover {
   width: 160px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #fff;
   cursor: pointer;
@@ -112,6 +123,7 @@
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+  font-family: sans-serif;
 }
 
 .bn632-hover:hover {

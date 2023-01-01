@@ -26,10 +26,36 @@
                 <div class="navmobile__button"><span class="navmobile__button-line1"></span><span
                         class="navmobile__button-line2"></span></div>
                 <ul class="navmobile__menu">
-                    <li><a href="../index.html">صفحه اصلی</a></li>
-                    <li><a class="myDIV">خروج</a>
-                        <div class="hide">آیا مطمعن هستید که قصد خروج از اکانت خود دارید؟</div>
-                    </li>
+                    <hr color="#517192">
+                    <a href="../index.html"><button class="dropdown-btn">صفحه اصلی</button></a>
+                    <hr color="#517192">
+                    <button class="dropdown-btn">شال
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <div><a class="sty" href="#">نخی</a></div>
+                        <div><a class="sty" href="#">زمستانی</a></div>
+                        <div><a class="sty" href="#">ساتن</a></div>
+                        <div><a class="sty" href="#">حریر</a></div>
+                        <div><a class="sty" href="#">ابریشم</a></div>
+                    </div>
+                    <hr color="#517192">
+                    <button class="dropdown-btn">روسری
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <div><a class="sty" href="#">نخی</a></div>
+                        <div><a class="sty" href="#">ساتن</a></div>
+                        <div><a class="sty" href="#">حریر</a></div>
+                        <div><a class="sty" href="#">ابریشم</a></div>
+                    </div>
+                    <hr color="#517192">
+                    <button class="dropdown-btn" id="myDIV">خروج</button>
+                    <div class="sty" id="hide">آیا مطمعن هستید که قصد خروج از اکانت خود دارید؟</div>
+                    <hr color="#517192">
+                    <button class="dropdown-btn" id="myDIV">پاک کردن اکانت</button>
+                    <div class="sty" id="hide">آیا مطمعن هستید که قصد پاک کردن حساب کاربری خود را دارید؟</div>
+                    <hr color="#517192">
                 </ul>
             </div>
             <div class="navmobile__bottom btngroup --full">
@@ -208,5 +234,20 @@
             </div>
         </div>
 </body>
-
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+  
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
 </html>
