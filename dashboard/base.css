@@ -24,6 +24,110 @@
   --gap: 30px;
 }
 
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(#00bcff, #814bf6);  min-width: 100px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #814bf6;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+#heading1{
+  padding: 30px;
+}
+
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.active {
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.bn632-hover {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn20 {
+  background-image: linear-gradient(
+    to right,
+    #667eea,
+    #764ba2,
+    #6b8dd6,
+    #8e37d7
+  );
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
 @media (max-width: 767px) {
   :root {
     --h1-fs: 3.6rem;
@@ -39,23 +143,6 @@
     --gap: 20px;
     --ptop: 120px;
   }
-}
-
-/* FONT FACE - font-display: fallback; */
-@font-face {
-  font-family: "ib";
-  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: "ir";
-  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: fallback;
 }
 
 html,
@@ -454,7 +541,6 @@ sub {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  background: #814bf6;
   display: table;
   transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -875,7 +961,7 @@ sub {
   font-size: var(--h1-fs);
   line-height: var(--h1-lh);
   display: block;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(98.94deg, #00bcff 0.87%, #814bf6 57.85%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(98.94deg, #00bcff 40.87%, #814bf6 57.85%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1041,7 +1127,6 @@ sub {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(/img/cursor-drag.svg) no-repeat center;
   background-size: contain;
   opacity: 0;
   transition: 0.3s;
