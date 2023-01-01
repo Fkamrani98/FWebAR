@@ -18081,46 +18081,6 @@ const GITHUB_REG_EX = /^https:\/\/github\.com\/.+\/.+$/;
 const SHOW_COOKIE_DELAY = 2 * timeSpan_1.milliSecondsInASecond;
 const sessionStart = Date.now();
 const router = Router_1.Router.create();
-var CookieConsent;
-(function (CookieConsent) {
-    const cookieBoxElement = document.querySelector('.cookiebox');
-    const setUserConsentCookie = (isAccepted) => {
-        document.cookie = `${hasUserConsentCookie_1.COOKIE_CONSENT}=${isAccepted}; expires=2038-01-19 04:14:07; path=/`;
-    };
-    const showCookies = () => {
-        cookieBoxElement.classList.add('--show');
-    };
-    const hideCookies = () => {
-        cookieBoxElement.classList.remove('--show');
-    };
-    const acceptUserConsentCookie = () => {
-        setUserConsentCookie(true);
-        enableGoogleAnalytics_1.enableGoogleAnalytics();
-        enableUxTracking_1.enableUxTracking();
-    };
-    CookieConsent.bind = async () => {
-        var _a;
-        cookieBoxElement.querySelector('.--c-close').addEventListener('click', () => {
-            hideCookies();
-            setUserConsentCookie(false);
-        });
-        cookieBoxElement.querySelector('.--btn-cookies').addEventListener('click', () => {
-            hideCookies();
-            acceptUserConsentCookie();
-        });
-        const inEurope = (_a = (await fetch('/website-backend/ineu')
-            .then(response => response.json()))) === null || _a === void 0 ? void 0 : _a.inEurope;
-        if (!inEurope) {
-            acceptUserConsentCookie();
-        }
-        else if (!hasUserConsentCookie_1.hasUserConsentCookie()) {
-            setTimeout(() => showCookies(), SHOW_COOKIE_DELAY);
-        }
-    };
-})(CookieConsent || (CookieConsent = {}));
-window.addEventListener('load', () => {
-    void CookieConsent.bind().catch(console.error);
-});
 const setUpUserActivity = async () => {
     const userActivityUrl = '/user-activity';
     const activityStub = new UserActivityBrowserStub_1.UserActivityBrowserStub(new Endpoint_1.HttpEndpoint(userActivityUrl));
