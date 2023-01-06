@@ -104,8 +104,9 @@
 
 .bn632-hover {
   width: 160px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
+  font-family: sans-serif;
   color: #fff;
   cursor: pointer;
   margin: 20px;
