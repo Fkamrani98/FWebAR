@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+
+<head>
+    <title>shawl</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="theme-color" content="#110E27" />
+
+    <link as="style" rel="preload" href="./css/base.css" />
+    <link as="style" rel="preload" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link href="./dashboard/bootstrap.min.css" rel="stylesheet" />
+    <link href="./dashboard/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+    <link href="./dashboard/nucleo-icons.css" rel="stylesheet" />
+
+
+    <script defer="" src="./js/cacheme-main-528d64d23ea1fe262bb9.js"></script>
+    <style>
+        a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+            font: 1em sans-serif;
+        }
+
+        button {
+            text-decoration: none;
+            font: 1em sans-serif;
+        }
+
+        .dropdown-content {
+            text-decoration: none;
+        }
+
+        .dropdown-content a {
+            text-decoration: none;
+        }
+
+        .font-icon-detail {
+            position: relative;
+        }
+
+        .glow:after {
+            position: absolute;
+            content: '';
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            z-index: -1;
+            height: 100%;
+            width: 700%;
+            filter: blur(30px);
+            transform: scale(1.3);
+            background: linear-gradient(90deg, #00bcff, #814bf6);
+            background-size: 200% 200%;
+            animation: animateglow 3s ease infinite;
+        }
+
+        .glow2:after {
+            position: absolute;
+            content: '';
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            z-index: -1;
+            height: 100%;
+            width: 700%;
+            filter: blur(30px);
+            transform: scale(1.3);
+            background: linear-gradient(90deg, #814bf6, #00bcff);
+            background-size: 200% 200%;
+            animation: animateglow 3s ease infinite;
+        }
+
+        @keyframes animateglow {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .font-icon-detail:hover img {
+            transform: scale(1.1);
+        }
+        
+        .font-icon-detail-2:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navmobile">
+        <div class="navmobile__inner">
+            <div class="navmobile__top">
+                <div class="navmobile__button"><span class="navmobile__button-line1"></span><span
+                        class="navmobile__button-line2"></span></div>
+                <ul class="navmobile__menu">
+                    <hr color="#517192">
+                    <a href="../index.html"><button class="dropdown-btn" style="text-align: right;">صفحه
+                            اصلی</button></a>
+                    <hr color="#517192">
+                    <button style="text-align: right;" class="dropdown-btn">شال</button>
+                    <div style="text-align: right;" class="dropdown-container">
+                        <div><a href="#">نخی</a></div>
+                        <div><a href="#">زمستانی</a></div>
+                        <div><a href="#">ساتن</a></div>
+                        <div><a href="#">حریر</a></div>
+                        <div><a href="#">ابریشم</a></div>
+                    </div>
+                    <hr color="#517192">
+                    <button style="text-align: right;" class="dropdown-btn">روسری</button>
+                    <div style="text-align: right;" class="dropdown-container">
+                        <div><a href="#">نخی</a></div>
+                        <div><a href="#">ساتن</a></div>
+                        <div><a href="#">حریر</a></div>
+                        <div><a href="#">ابریشم</a></div>
+                    </div>
+                    <hr color="#517192">
+                    <a href="./login/index.html"><button style="text-align: right;" class="dropdown-btn">ورود
+                        </button></a>
+                    <hr color="#517192">
+                </ul>
+            </div>
+            <div class="navmobile__bottom btngroup --full">
+                <div class="btn --transparent --line"><a href="../index.html">ثبت نام</a></div>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="header__right">
+                    <ul class="header__nav">
+                        <li><a style="text-decoration: none; color: #fff;" href="login/index.html">صفحه اصلی</a></li>
+                        <div class="dropdown">
+                            <div class="dropbtn">روسری</div>
+                            <div class="dropdown-content">
+                                <a href="#">نخی</a>
+                                <a href="#">ساتن</a>
+                                <a href="#">حریر</a>
+                                <a href="#">ابریشم</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropbtn">شال</div>
+                            <div class="dropdown-content">
+                                <a href="#">نخی</a>
+                                <a href="#">زمستانی</a>
+                                <a href="#">ساتن</a>
+                                <a href="#">حریر</a>
+                                <a href="#">ابریشم</a>
+                            </div>
+                        </div>
+                        <li><a style="text-decoration: none; color: #fff;" href="login/index.html">ورود</a></li>
+                    </ul>
+                    <div class="header__divide"></div>
+                    <div class="header__btnmenu"><span></span><span></span><span></span></div>
+                    <div class="header__login">
+                        <div class="btngroup">
+                            <div class="btn --small --transparent"><a style="text-decoration: none;" id="navbar-signin"
+                                    href="login/index.html">ثبت
+                                    نام</a></div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+
+        <div class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="head"> نخی </h1>
+                    <div class="card">
+                        <div class="card-body all-icons">
+                            <div class="row">
+                                <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+                                    <div class="glow">
+                                        <div class="font-icon-detail">
+                                            <img src="./dashboard/image.jpg" width="150px" height="150px">
+                                            <div><a href="/"><button class="bn632-hover bn20"
+                                                        style="width: 100px; height: 40px;">امتحان کردن</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+                                    <div class="font-icon-detail">
+                                        <img src="./dashboard/image.jpg" width="150px" height="150px">
+                                        <div><a href="/"><button class="bn632-hover bn20"
+                                                    style="width: 100px; height: 40px;">امتحان کردن</button></a></div>
+                                    </div>
+                                </div>
+                                <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+                                    <div class="font-icon-detail">
+                                        <img src="./dashboard/image.jpg" width="150px" height="150px">
+                                        <div><a href="/"><button class="bn632-hover bn20"
+                                                    style="width: 100px; height: 40px;">امتحان کردن</button></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="head"> ساتن </h1>
+                    <div class="card">
+                        <div class="card-body all-icons">
+                            <div class="row">
+                                <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+                                    <div class="glow">
+                                        <div class="font-icon-detail">
+                                            <img src="./dashboard/image.jpg" width="150px" height="150px">
+                                            <div><a href="/"><button class="bn632-hover bn20"
+                                                        style="width: 100px; height: 40px;">امتحان کردن</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+                                    <div class="font-icon-detail">
+                                        <img src="./dashboard/image.jpg" width="150px" height="150px">
+                                        <div><a href="/"><button class="bn632-hover bn20"
+                                                    style="width: 100px; height: 40px;">امتحان کردن</button></a></div>
+                                    </div>
+                                </div>
+                                <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+                                    <div class="font-icon-detail">
+                                        <img src="./dashboard/image.jpg" width="150px" height="150px">
+                                        <div><a href="/"><button class="bn632-hover bn20"
+                                                    style="width: 100px; height: 40px;">امتحان کردن</button></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="border-left-color: #814bf6;" class="head"> حریر </h1>
+                    <div class="card">
+                        <div class="card-body all-icons">
+                            <div class="row">
+                                <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+                                    <div class="glow2">
+                                        <div class="font-icon-detail-2">
+                                            <img src="./dashboard/image.jpg" width="150px" height="150px">
+                                            <div><a href="/"><button class="bn632-hover bn20"
+                                                        style="width: 100px; height: 40px;">امتحان کردن</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+                                    <div class="font-icon-detail-2">
+                                        <img src="./dashboard/image.jpg" width="150px" height="150px">
+                                        <div><a href="/"><button class="bn632-hover bn20"
+                                                    style="width: 100px; height: 40px;">امتحان کردن</button></a></div>
+                                    </div>
+                                </div>
+                                <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+                                    <div class="font-icon-detail-2">
+                                        <img src="./dashboard/image.jpg" width="150px" height="150px">
+                                        <div><a href="/"><button class="bn632-hover bn20"
+                                                    style="width: 100px; height: 40px;">امتحان کردن</button></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="head"> ابریشم </h1>
+                    <div class="card">
+                        <div class="card-body all-icons">
+                            <div class="row">
+                                <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+                                    <div class="glow">
+                                        <div class="font-icon-detail">
+                                            <img src="./dashboard/image.jpg" width="150px" height="150px">
+                                            <div><a href="/"><button class="bn632-hover bn20"
+                                                        style="width: 100px; height: 40px;">امتحان کردن</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+                                    <div class="font-icon-detail">
+                                        <img src="./dashboard/image.jpg" width="150px" height="150px">
+                                        <div><a href="/"><button class="bn632-hover bn20"
+                                                    style="width: 100px; height: 40px;">امتحان کردن</button></a></div>
+                                    </div>
+                                </div>
+                                <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+                                    <div class="font-icon-detail">
+                                        <img src="./dashboard/image.jpg" width="150px" height="150px">
+                                        <div><a href="/"><button class="bn632-hover bn20"
+                                                    style="width: 100px; height: 40px;">امتحان کردن</button></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</html>
