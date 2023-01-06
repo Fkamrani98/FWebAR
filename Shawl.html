@@ -2,21 +2,42 @@
 <html dir="rtl" lang="fa-IR">
 
 <head>
-    <title>Dashboard</title>
+    <title>shawl</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="theme-color" content="#110E27" />
-    <link as="style" rel="preload" href="base.css" />
-    <link as="style" rel="preload" href="common.css" />
-    <link rel="stylesheet" href="base.css" />
-    <link rel="stylesheet" href="common.css" />
-    <link href="bootstrap.min.css" rel="stylesheet" />
-    <link href="black-dashboard.css?v=1.0.0" rel="stylesheet" />
-    <link href="nucleo-icons.css" rel="stylesheet" />
+
+    <link as="style" rel="preload" href="./css/base.css" />
+    <link as="style" rel="preload" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link href="./dashboard/bootstrap.min.css" rel="stylesheet" />
+    <link href="./dashboard/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+    <link href="./dashboard/nucleo-icons.css" rel="stylesheet" />
 
 
-    <script defer="" src="cacheme-main-528d64d23ea1fe262bb9.js"></script>
+    <script defer="" src="./js/cacheme-main-528d64d23ea1fe262bb9.js"></script>
+    <style>
+        a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+            font: 1em sans-serif;
+        }
+
+        button {
+            text-decoration: none;
+            font: 1em sans-serif;
+        }
+
+        .dropdown-content {
+            text-decoration: none;
+        }
+
+        .dropdown-content a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,40 +48,33 @@
                         class="navmobile__button-line2"></span></div>
                 <ul class="navmobile__menu">
                     <hr color="#517192">
-                    <a href="../index.html"><button class="dropdown-btn">صفحه اصلی</button></a>
+                    <a href="../index.html"><button class="dropdown-btn" style="text-align: right;">صفحه
+                            اصلی</button></a>
                     <hr color="#517192">
-                    <button class="dropdown-btn">شال
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-container">
-                        <div><a class="sty" href="#">نخی</a></div>
-                        <div><a class="sty" href="#">زمستانی</a></div>
-                        <div><a class="sty" href="#">ساتن</a></div>
-                        <div><a class="sty" href="#">حریر</a></div>
-                        <div><a class="sty" href="#">ابریشم</a></div>
+                    <button style="text-align: right;" class="dropdown-btn">شال</button>
+                    <div style="text-align: right;" class="dropdown-container">
+                        <div><a href="#">نخی</a></div>
+                        <div><a href="#">زمستانی</a></div>
+                        <div><a href="#">ساتن</a></div>
+                        <div><a href="#">حریر</a></div>
+                        <div><a href="#">ابریشم</a></div>
                     </div>
                     <hr color="#517192">
-                    <button class="dropdown-btn">روسری
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-container">
-                        <div><a class="sty" href="#">نخی</a></div>
-                        <div><a class="sty" href="#">ساتن</a></div>
-                        <div><a class="sty" href="#">حریر</a></div>
-                        <div><a class="sty" href="#">ابریشم</a></div>
+                    <button style="text-align: right;" class="dropdown-btn">روسری</button>
+                    <div style="text-align: right;" class="dropdown-container">
+                        <div><a href="#">نخی</a></div>
+                        <div><a href="#">ساتن</a></div>
+                        <div><a href="#">حریر</a></div>
+                        <div><a href="#">ابریشم</a></div>
                     </div>
                     <hr color="#517192">
-                    <button class="dropdown-btn" id="myDIV">خروج</button>
-                    <div class="sty" id="hide">آیا مطمعن هستید که قصد خروج از اکانت خود دارید؟</div>
-                    <hr color="#517192">
-                    <button class="dropdown-btn" id="myDIV">پاک کردن اکانت</button>
-                    <div class="sty" id="hide">آیا مطمعن هستید که قصد پاک کردن حساب کاربری خود را دارید؟</div>
+                    <a href="./login/index.html"><button style="text-align: right;" class="dropdown-btn">ورود
+                        </button></a>
                     <hr color="#517192">
                 </ul>
             </div>
             <div class="navmobile__bottom btngroup --full">
-                <div class="btn --transparent --line"><a href="../index.html">صفحه اصلی</a></div>
-                <div class="btn book-demo"><a href="#calendly"><strong>Get Started</strong></a></div>
+                <div class="btn --transparent --line"><a href="../index.html">ثبت نام</a></div>
             </div>
         </div>
     </nav>
@@ -69,29 +83,33 @@
             <div class="container-fluid">
                 <div class="header__right">
                     <ul class="header__nav">
-                        <li><a class="active" href="../index.html">Home</a></li>
-                        <li><a class="active">sign out</a></li>
+                        <li><a class="active" href="login/index.html">صفحه اصلی</a></li>
+                        <div class="dropdown">
+                            <div class="dropbtn">روسری</div>
+                            <div class="dropdown-content">
+                                <a href="#">نخی</a>
+                                <a href="#">ساتن</a>
+                                <a href="#">حریر</a>
+                                <a href="#">ابریشم</a>
+                            </div>
+                        </div>
+                        <li><a id="navbar-signin" href="login/index.html">ورود</a></li>
                     </ul>
                     <div class="header__divide"></div>
                     <div class="header__btnmenu"><span></span><span></span><span></span></div>
                     <div class="header__login">
                         <div class="btngroup">
-                            <ul class="schero__content-form btngroup">
-                                <li>
-                                    <div><a href="/"><button class="bn632-hover bn20"
-                                                style="width: 100px; height: 40px;">شال</button></a><a href="/"><button
-                                                style="width: 100px; height: 40px;"
-                                                class="bn632-hover bn20">روسری</button></a></div>
-                                </li>
-                            </ul>
+                            <div class="btn --small --transparent"><a id="navbar-signin" href="login/index.html">ثبت
+                                    نام</a></div>
                         </div>
                     </div>
                 </div>
-            </div>
         </header>
+
         <div class="content">
             <div class="row">
                 <div class="col-md-12">
+                    <h1 class="head" style="color: aliceblue;"> خدمات </h1>
                     <div class="card">
                         <div class="card-body all-icons">
                             <div class="row">
@@ -237,17 +255,18 @@
 <script>
     var dropdown = document.getElementsByClassName("dropdown-btn");
     var i;
-  
+
     for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
-        }
-      });
+        dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
     }
-  </script>
+</script>
+
 </html>

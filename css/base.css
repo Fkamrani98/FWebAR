@@ -29,6 +29,7 @@
   padding: 16px;
   font-size: 16px;
   border: none;
+  font: 1em sans-serif;
 }
 
 .dropdown {
@@ -48,6 +49,8 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-align: right;
+  font: 1em sans-serif;
 }
 
 .dropdown-content a:hover {background-color: #814bf6;}
@@ -75,6 +78,7 @@
 
 .active {
   color: white;
+  text-decoration: none;
 }
 
 .dropdown-container {
@@ -579,6 +583,7 @@ sub {
 
 .btn.--transparent a {
   background: none;
+  padding-top: 10px;
 }
 
 .btn.--transparent:hover a {
