@@ -24,6 +24,17 @@
   --gap: 30px;
 }
 
+.head{
+  color: aliceblue;
+  font-family: sans-serif;
+  text-align: right;
+  padding-bottom: 20px;
+  border-left: 2rem solid ;
+  border-left-color: #00bcff;
+  border-radius: 5px;
+}
+
+
 .dropbtn {
   color: white;
   padding: 16px;
@@ -500,31 +511,6 @@ a.--hover-link:hover {
 strong {
   font-family: ib, sans-serif;
 }
-
-.--white-cl {
-  color: #fff;
-}
-
-.--purple-cl {
-  color: #814bf6;
-}
-
-.--blue-cl {
-  color: #00bcff;
-}
-
-.--orange-cl {
-  color: #ff980e;
-}
-
-.--green-cl {
-  color: #1fb881;
-}
-
-.--pink-cl {
-  color: #ff4ab7;
-}
-
 sup {
   vertical-align: super;
   font-size: var(--body14-fs);
