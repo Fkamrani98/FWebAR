@@ -18,12 +18,12 @@ function showThankYou() {
   prism.style.transform = "translateZ(-100px) rotateX( 90deg)";
 }
 
-
-/*axios.post('http://107.181.112.52:8001/user/', {
+const BASE_URL = `http://5.239.167.135:1234`
+axios.post(URL=`${BASE_URL}/login/`, {
   email: 'ftmh323@gmail.com',
   password: '12345678',
   username: 'ftmh232',
   phone_number:'09923765228',
 })
   .then((res)=>console.log(res))
-  .catch((err)=>console.log(err))*/
+  .catch((err)=>console.log(err))
