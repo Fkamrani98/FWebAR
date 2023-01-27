@@ -13,7 +13,7 @@
 
     <script defer="module" src="scriptlogin.js"></script>
     <script defer="" src="../js/cacheme-main-528d64d23ea1fe262bb9.js"></script>
-    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    </script>
 
 </head>
 
@@ -87,16 +87,16 @@
                         <h2 style="margin-left: 160px;">ورود</h2>
                         <form onsubmit="event.preventDefault()">
                             <div class="field-wrapper">
-                                <input type="text" name="username" placeholder="username">
-                                <label>username</label>
+                                <input class="username" type="text" name="username" placeholder="username">
+                                <label>نام کاربری</label>
                             </div>
                             <div class="field-wrapper">
-                                <input type="password" name="password" placeholder="password"
+                                <input class="password" type="password" name="password" placeholder="password"
                                     autocomplete="new-password">
-                                <label>password</label>
+                                <label>رمز عبور</label>
                             </div>
                             <div class="field-wrapper">
-                                <input type="submit" onclick="showSubscribe()">
+                                <button><input type="submit" onclick="showSubscribe()"></button>
                             </div>
                             <span class="psw" onclick="showForgotPassword()">فراموشی رمز عبور؟</span>
                             <span class="signup" onclick="showSignup()">ساختن اکانت</span>
@@ -110,7 +110,7 @@
                         <form onsubmit="event.preventDefault()">
                             <div class="field-wrapper">
                                 <input type="tel" name="phone" placeholder="09">
-                                <label>phone number</label>
+                                <label>شماره مبایل</label>
                             </div>
                             <div class="field-wrapper">
                                 <input type="submit" onclick="howForgotPassword()">
@@ -151,7 +151,7 @@
                 <div class="face face-bottom">
                     <div class="content">
                         <div class="thank-you-msg">
-                            Thank you!
+                            اکانت شما با موفقیت ساخته شد!
                         </div>
                     </div>
                 </div>

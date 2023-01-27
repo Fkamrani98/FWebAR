@@ -1,29 +1,37 @@
 let prism = document.querySelector(".rec-prism");
 
-function showSignup() {
+function showSignup(){
   prism.style.transform = "translateZ(-100px) rotateY( -90deg)";
 }
-function showLogin() {
+function showLogin(){
   prism.style.transform = "translateZ(-100px)";
 }
-function showForgotPassword() {
+function showForgotPassword(){
   prism.style.transform = "translateZ(-100px) rotateY( -180deg)";
 }
 
-function showSubscribe() {
+function showSubscribe(){
   prism.style.transform = "translateZ(-100px) rotateX( -90deg)";
 }
 
-function showThankYou() {
+function showThankYou(){
   prism.style.transform = "translateZ(-100px) rotateX( 90deg)";
 }
 
-const BASE_URL = `http://5.239.167.135:1234`
-axios.post(URL=`${BASE_URL}/login/`, {
-  email: 'ftmh323@gmail.com',
-  password: '12345678',
-  username: 'ftmh232',
-  phone_number:'09923765228',
+const $=document
+const username = $.querySelector('.username')
+const password = $.querySelector('.password')
+const button = $.querySelector('button')
+
+button.addEventListener('click', (e) => {
+  e.preventDefault()
+  let userData = {
+    username: username.value,
+    password: password.value,
+  }
+  fetch('http://2.179.170.190:1234'), {
+    method:'POST',
+    body: JSON.stringify(userData)
+  }
 })
-  .then((res)=>console.log(res))
-  .catch((err)=>console.log(err))
+.then(res => console.log(res))
