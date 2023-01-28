@@ -1,4 +1,4 @@
-#submitlogin, #submitsms{
+#submitlogin, #submitsms, #submitforget, #submitregister{
   -webkit-appearance: none;
   appearance: none;
   outline: none;
