@@ -2,6 +2,9 @@ const usernameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
 const btnlogin = document.getElementById("submitlogin");
 
+const emailInput = document.getElementById("email");
+const phoneInput = document.getElementById("phone");
+
 btnlogin.addEventListener("click", () => {
   const username = usernameInput.value;
   const password = passwordInput.value;
