@@ -1,3 +1,20 @@
+const usernameInput = document.getElementById("username");
+const passwordInput = document.getElementById("password");
+const btn = document.getElementById("submit");
+
+btn.addEventListener("click", () => {
+  const username = usernameInput.value;
+  const password = passwordInput.value;
+
+  axios.post("https://reqres.in/api/login", {
+    username: username,
+    password: password
+  })
+    .then((response) => {
+      console.log(response);
+    });
+});
+
 let prism = document.querySelector(".rec-prism");
 
 function showSignup() {
@@ -18,12 +35,4 @@ function showThankYou() {
   prism.style.transform = "translateZ(-100px) rotateX( 90deg)";
 }
 
-const BASE_URL = `http://5.239.167.135:1234`
-axios.post(URL=`${BASE_URL}/login/`, {
-  email: 'ftmh323@gmail.com',
-  password: '12345678',
-  username: 'ftmh232',
-  phone_number:'09923765228',
-})
-  .then((res)=>console.log(res))
-  .catch((err)=>console.log(err))
+
