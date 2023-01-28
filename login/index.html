@@ -77,7 +77,7 @@
                                 <label>SMS</label>
                             </div>
                             <div class="field-wrapper">
-                                <input type="submit" onclick="showThankYou()">
+                                <button id="submitsms" onclick="showThankYou()">ورود</button>
                             </div>
                         </form>
                     </div>
@@ -96,7 +96,7 @@
                                 <label>رمز عبور</label>
                             </div>
                             <div class="field-wrapper">
-                                <button id="submitlogin">ورود</button>
+                                <button id="submitlogin" onclick="showThankYou()">ورود</button>
                             </div>
                             <span class="psw" onclick="showForgotPassword()">فراموشی رمز عبور؟</span>
                             <span class="signup" onclick="showSignup()">ساختن اکانت</span>
@@ -113,7 +113,7 @@
                                 <label>شماره مبایل</label>
                             </div>
                             <div class="field-wrapper">
-                                <input type="submit" onclick="howForgotPassword()">
+                                <button id="submitsms" onclick="showThankYou()">ورود</button>
                             </div>
                         </form>
                     </div>
@@ -129,19 +129,18 @@
                             <div class="field-wrapper">
                                 <input type="password" name="password" placeholder="password"
                                     autocomplete="new-password">
-                                <label>password</label>
+                                <label>رمز عبور</label>
                             </div>
                             <div class="field-wrapper">
-                                <input type="password" name="password2" placeholder="password"
-                                    autocomplete="new-password">
-                                <label>re-enter password</label>
+                                <input id="username" type="text" name="username" placeholder="username">
+                                <label>نام کاربری</label>
                             </div>
                             <div class="field-wrapper">
                                 <input type="tel" name="phone" placeholder="phone number">
                                 <label>*********09</label>
                             </div>
                             <div class="field-wrapper">
-                                <input type="submit" onclick="showThankYou()">
+                                <button id="submitsms" onclick="showSubscribe()">ثبت نام</button>
                             </div>
                             <span class="singin" onclick="showLogin()">اکانت دارید؟ ورود</span>
                         </form>
