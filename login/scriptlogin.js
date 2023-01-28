@@ -1,8 +1,8 @@
 const usernameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
-const btn = document.getElementById("submit");
+const btnlogin = document.getElementById("submitlogin");
 
-btn.addEventListener("click", () => {
+btnlogin.addEventListener("click", () => {
   const username = usernameInput.value;
   const password = passwordInput.value;
 
