@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@zappar/sharing": "^1.1.7",
     "axios": "^1.2.5"
   }
 }
