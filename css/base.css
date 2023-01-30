@@ -50,7 +50,6 @@
 
 .dropdown-content {
   display: none;
-  position: absolute;
   background: linear-gradient(#00bcff, #814bf6);  min-width: 100px;
   z-index: 1;
 }
