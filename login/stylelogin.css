@@ -19,6 +19,10 @@
   font-size: 1.3rem;
 }
 
+.forget{
+  margin-top: -20px;
+}
+
 .wrapper2 {
   width: 250px;
   height: 350px;
@@ -63,16 +67,6 @@
   position: relative;
 }
 
-.face .content .field-wrapper label {
-  position: absolute;
-  pointer-events: none;
-  font-size: 0.85em;
-  top: 40%;
-  left: 0;
-  transform: translateY(-50%);
-  transition: all ease-in 0.25s;
-  color: #999999;
-}
 
 .face .content .field-wrapper input[type=text],
 .face .content .field-wrapper input[type=password],
@@ -103,12 +97,7 @@
   color: #666;
 }
 
-.face .content .field-wrapper input[type=text]::-webkit-input-placeholder,
-.face .content .field-wrapper input[type=password]::-webkit-input-placeholder,
-.face .content .field-wrapper input[type=tel]::-webkit-input-placeholder,
-.face .content .field-wrapper textarea::-webkit-input-placeholder {
-  opacity: 0;
-}
+
 
 .face .content .field-wrapper input[type=text]::-moz-placeholder,
 .face .content .field-wrapper input[type=password]::-moz-placeholder,
@@ -131,28 +120,13 @@
   opacity: 0;
 }
 
-.face .content .field-wrapper input[type=text]:focus+label,
-.face .content .field-wrapper input[type=text]:not(:placeholder-shown)+label,
-.face .content .field-wrapper input[type=password]:focus+label,
-.face .content .field-wrapper input[type=password]:not(:placeholder-shown)+label,
-.face .content .field-wrapper input[type=tel]:focus+label,
-.face .content .field-wrapper input[type=tel]:not(:placeholder-shown)+label,
-.face .content .field-wrapper textarea:focus+label,
-.face .content .field-wrapper textarea:not(:placeholder-shown)+label {
-  top: -35%;
-  color: #42509e;
-}
-
 
 .face .content .field-wrapper textarea {
   resize: none;
   line-height: 1em;
 }
 
-.face .content .field-wrapper textarea:focus+label,
-.face .content .field-wrapper textarea:not(:placeholder-shown)+label {
-  top: -25%;
-}
+
 
 .face .thank-you-msg {
   position: absolute;
