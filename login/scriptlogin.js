@@ -59,3 +59,7 @@ function showSubscribe() {
 function showThankYou() {
   prism.style.transform = "translateZ(-100px) rotateX( 90deg)";
 }
+
+function showContactUs(){
+  prism.style.transform = "translateZ(-100px) rotateY( 90deg)";
+}

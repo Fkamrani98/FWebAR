@@ -89,8 +89,8 @@
                                 <input id="usernameLogin" type="text" name="username" placeholder="نام کاربری">
                             </div>
                             <div class="field-wrapper">
-                                <input id="passwordLogin" type="password" name="password" placeholder="رمز عبور ۸ کاراکتری"
-                                    autocomplete="new-password">
+                                <input id="passwordLogin" type="password" name="password"
+                                    placeholder="رمز عبور ۸ کاراکتری" autocomplete="new-password">
                             </div>
                             <div class="field-wrapper">
                                 <button id="submitlogin" onclick="showThankYou()">ورود</button>
@@ -116,7 +116,7 @@
                                 </div>
                             </div>
                             <div class="field-wrapper">
-                                <button id="submitsms" onclick="showLogin()">ورود</button>
+                                <button id="submitsms" onclick="showContactUs()">ورود</button>
                             </div>
                         </form>
                     </div>
@@ -126,17 +126,19 @@
                         <h2 style="margin-left: 140px;">ثبت نام</h2>
                         <form onsubmit="event.preventDefault()">
                             <div class="field-wrapper">
-                                <input id="emailRegister" type="text" name="email" placeholder="info@gmail.com">
+                                <input id="emailRegister" type="text" name="email" placeholder="info@gmail.com"
+                                    required>
                             </div>
                             <div class="field-wrapper">
-                                <input id="usernameRegister" type="text" name="username" placeholder="نام کاربری">
+                                <input id="usernameRegister" type="text" name="username" placeholder="نام کاربری"
+                                    required>
                             </div>
                             <div class="field-wrapper">
-                                <input id="passwordRegister" type="password" name="password" placeholder="رمز عبور ۸ کاراکتری"
-                                    autocomplete="new-password">
+                                <input id="passwordRegister" type="password" name="password"
+                                    placeholder="رمز عبور ۸ کاراکتری" autocomplete="new-password" required>
                             </div>
                             <div class="field-wrapper">
-                                <input id="phoneRegister" type="tel" name="phone" placeholder="*********09">
+                                <input id="phoneRegister" type="tel" name="phone" placeholder="*********09" required>
                             </div>
                             <div class="field-wrapper">
                                 <button id="submitregister" onclick="showSubscribe()">ثبت نام</button>
@@ -145,7 +147,21 @@
                         </form>
                     </div>
                 </div>
-
+                <div class="face face-left">
+                    <div class="content">
+                        <h2>رمز جدید</h2>
+                        <small>لطفا رمز رمز جدید خود را وارد کنید.</small>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input id="passwordRegister" type="password" name="password"
+                                    placeholder="رمز عبور ۸ کاراکتری" autocomplete="new-password" required>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="submit" onclick="showLogin()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
                 <div class="face face-bottom">
                     <div class="content">
                         <div class="thank-you-msg">
