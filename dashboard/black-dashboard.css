@@ -806,7 +806,7 @@ body.dashboard-white .navbar .navbar-brand {
   .rtl .footer {
     padding-right: 25px;
   }
-}
+
 
 @media screen and (min-width: 992px) {
   .navbar-collapse {
@@ -850,10 +850,8 @@ body.dashboard-white .navbar .navbar-brand {
   }
   .card-stats [class*="col-"] .statistics::after {
     display: none;
-  .card-timeline .timeline:before {
-    left: 5%;
   }
-}
+
   .card-timeline .timeline>li>.timeline-badge {
     left: 5%;
   }
@@ -873,7 +871,7 @@ body.dashboard-white .navbar .navbar-brand {
     left: -14px;
     right: auto;
   }
-}
+
 
 @media screen and (max-width: 576px) {
   .navbar[class*='navbar-toggleable-'] .container {
@@ -1249,4 +1247,5 @@ body.dashboard-white .navbar .navbar-brand {
 
 .white-content .main-panel .footer .copyright {
   color: #1d253b;
+}
 }
