@@ -1,0 +1,181 @@
+<html dir="rtl" lang="fa-IR">
+
+<head>
+    <title>Sign up / Login Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link as="style" rel="preload" href="../css/base.css" />
+    <link as="style" rel="preload" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="stylelogin.css">
+
+    <script defer="module" src="scriptlogin.js"></script>
+    <script defer="" src="../js/cacheme-main-528d64d23ea1fe262bb9.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js" integrity="sha512-wT7uPE7tOP6w4o28u1DN775jYjHQApdBnib5Pho4RB0Pgd9y7eSkAV1BTqQydupYDB9GBhTcQQzyNMPMV3cAew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <nav class="navmobile">
+        <div class="navmobile__inner">
+            <div class="navmobile__top">
+                <div class="navmobile__button"><span class="navmobile__button-line1"></span><span
+                        class="navmobile__button-line2"></span></div>
+                <ul class="navmobile__menu">
+                    <li><a href="/index.html">صفحه اصلی</a></li>
+                    <li onclick="showLogin()"><a>ورود</a></li>
+                    <li onclick="showSignup()"><a>ثبت نام</a></li>
+                    <li onclick="showForgotPassword()"><a>فراموشی رمز عبور</a></li>
+                </ul>
+            </div>
+            <ul class="schero__content-form btngroup">
+                <li>
+                    <div class="but"><a href="/Shawl.html"><button class="bn632-hover bn20">شال</button></a><a href="/scarf.html"><button
+                                class="bn632-hover bn20">روسری</button></a></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="header__right">
+                    <ul class="header__nav">
+                        <li><a class="active" href="/index.html">صفحه اصلی</a></li>
+                        <li onclick="showLogin()"><a class="active">ورود</a></li>
+                        <li onclick="showSignup()"><a class="active">ثبت نام</a></li>
+                        <li onclick="showForgotPassword()"><a class="active">فراموشی رمز عبور</a></li>
+                    </ul>
+                    <div class="header__divide"></div>
+                    <div class="header__btnmenu"><span></span><span></span><span></span></div>
+                    <div class="header__login">
+                        <div class="btngroup">
+                            <ul class="schero__content-form btngroup">
+                                <li>
+                                    <div><a href="/Shawl.html"><button class="bn632-hover bn20"
+                                                style="width: 100px; height: 40px;">شال</button></a><a href="/scarf.html"><button
+                                                style="width: 100px; height: 40px;"
+                                                class="bn632-hover bn20">روسری</button></a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper2">
+            <div class="rec-prism">
+                <div class="face face-top">
+                    <div class="content">
+                        <h2 style="margin-left: 160px;">پیامک</h2>
+                        <small style="margin-left: 50px;">لطفا کد پیامک شده را وارد کنید.</small>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input id="InputActiveUser" type="text" placeholder="نام کاربری را مجدد وارد کنید">
+                                <input id="InputSubmitSms" type="password" placeholder="کد">
+                            </div>
+                            <div class="field-wrapper">
+                                <button id="submitsms" onclick="showThankYou()">ورود</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-front">
+                    <div class="content">
+                        <h2 style="margin-left: 160px;">ورود</h2>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input id="usernameLogin" type="text" name="username" placeholder="نام کاربری">
+                            </div>
+                            <div class="field-wrapper">
+                                <input id="passwordLogin" type="password" name="password"
+                                    placeholder="رمز عبور ۸ کاراکتری" autocomplete="new-password">
+                            </div>
+                            <div class="field-wrapper">
+                                <button id="submitlogin" onclick="showThankYou()">ورود</button>
+                            </div>
+                            <span class="psw" onclick="showForgotPassword()">فراموشی رمز عبور؟</span>
+                            <span class="signup" onclick="showSignup()">ساختن اکانت</span>
+                        </form>
+                    </div>
+                </div>
+                <div style="text-align: right;" class="face face-back">
+                    <div class="content">
+                        <h2>رمز عبور خود را فراموش کردید؟</h2>
+                        <small>لطفا شماره خود و نام کابری را وارد کنید تا کد برای شما ارسال شود.</small>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input  id="InputUsernameForget" class="forget" type="tel" name="phone" placeholder="نام کاربری خود را وارد کنید">
+                            </div>
+                            <div class="field-wrapper">
+                                <input id="InputPhoneForget" class="forget" type="tel" name="phone" placeholder="*********09">
+                            </div>
+                            <div class="field-wrapper">
+                                <button id="submitforget">ارسال کد</button>
+                                <div class="field-wrapper">
+                                    <h6 style="font-size: 12px;">لطفا کد پیامک شده را وارد کنید.</h6>
+                                    <input id="CodeUpdateUser" type="password" placeholder="کد">
+                                </div>
+                            </div>
+                            <div class="field-wrapper">
+                                <button id="submitSMSnew" onclick="showContactUs()">ورود</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-right">
+                    <div class="content">
+                        <h2 style="margin-left: 140px;">ثبت نام</h2>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input id="emailRegister" type="text" name="email" placeholder="info@gmail.com"
+                                    required>
+                            </div>
+                            <div class="field-wrapper">
+                                <input id="usernameRegister" type="text" name="username" placeholder="نام کاربری"
+                                    required>
+                            </div>
+                            <div class="field-wrapper">
+                                <input id="passwordRegister" type="password" name="password"
+                                    placeholder="رمز عبور ۸ کاراکتری" autocomplete="new-password" required>
+                            </div>
+                            <div class="field-wrapper">
+                                <input id="phoneRegister" type="tel" name="phone" placeholder="*********09" required>
+                            </div>
+                            <div class="field-wrapper">
+                                <button id="submitregister" onclick="showSubscribe()">ثبت نام</button>
+                            </div>
+                            <span class="singin" onclick="showLogin()">اکانت دارید؟ ورود</span>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-left">
+                    <div class="content">
+                        <h2>رمز جدید</h2>
+                        <small>لطفا رمز رمز جدید خود را وارد کنید.</small>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field-wrapper">
+                                <input id="Newpassword" type="password" name="password"
+                                    placeholder="رمز عبور ۸ کاراکتری" autocomplete="new-password" required>
+                            </div>
+                            <div class="field-wrapper">
+                                <input id="updateNewPassword" type="submit" onclick="showLogin()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="face face-bottom">
+                    <div class="content">
+                        <div class="thank-you-msg">
+                            عملیات با موفقیت انجام شد!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
