@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="./modal.css">
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js" integrity="sha512-wT7uPE7tOP6w4o28u1DN775jYjHQApdBnib5Pho4RB0Pgd9y7eSkAV1BTqQydupYDB9GBhTcQQzyNMPMV3cAew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"
+        integrity="sha512-wT7uPE7tOP6w4o28u1DN775jYjHQApdBnib5Pho4RB0Pgd9y7eSkAV1BTqQydupYDB9GBhTcQQzyNMPMV3cAew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer="" src="../js/cacheme-main-528d64d23ea1fe262bb9.js"></script>
 </head>
 
@@ -29,41 +31,44 @@
                         class="navmobile__button-line2"></span></div>
                 <ul class="navmobile__menu">
                     <hr color="#517192">
-                    <a href="/index.html"><button class="dropdown-btn">صفحه اصلی</button></a>
+                    <a href="index.html" style="text-decoration: none;"><button class="dropdown-btn"
+                            style="text-align: right;">صفحه
+                            اصلی</button></a>
                     <hr color="#517192">
-                    <button class="dropdown-btn">شال
+                    <button style="text-align: right; font-family: sans-serif;" class="dropdown-btn">شال
                         <i class="fa fa-caret-down"></i>
                     </button>
-                    <div class="dropdown-container">
-                        <div><a class="sty" href="#">نخی</a></div>
-                        <div><a class="sty" href="#">زمستانی</a></div>
-                        <div><a class="sty" href="#">ساتن</a></div>
-                        <div><a class="sty" href="#">حریر</a></div>
-                        <div><a class="sty" href="#">ابریشم</a></div>
+                    <div style="text-align: right;" class="dropdown-container">
+                        <div><a href="Shawl.html#nakhi_sh">نخی</a></div>
+                        <div><a href="Shawl.html#zemestani">زمستانی</a></div>
+                        <div><a href="Shawl.html#satan_sh">ساتن</a></div>
+                        <div><a href="Shawl.html#harir_sh">حریر</a></div>
+                        <div><a href="Shawl.html#abrisham_sh">ابریشم</a></div>
                     </div>
                     <hr color="#517192">
-                    <button class="dropdown-btn">روسری
+                    <button style="text-align: right; font-family: sans-serif;" class="dropdown-btn">روسری
                         <i class="fa fa-caret-down"></i>
                     </button>
-                    <div class="dropdown-container">
-                        <div><a class="sty" href="#">نخی</a></div>
-                        <div><a class="sty" href="#">ساتن</a></div>
-                        <div><a class="sty" href="#">حریر</a></div>
-                        <div><a class="sty" href="#">ابریشم</a></div>
+                    <div style="text-align: right;" class="dropdown-container">
+                        <div><a href="Scarf.html#nakhi_s">نخی</a></div>
+                        <div><a href="Scarf.html#satan_s">ساتن</a></div>
+                        <div><a href="Scarf.html#harir_s">حریر</a></div>
+                        <div><a href="Scarf.html#abrisham_s">ابریشم</a></div>
                     </div>
                     <hr color="#517192">
-                    <button class="dropdown-btn" id="myDIV">خروج</button>
-                    <div class="sty" id="hide">آیا مطمعن هستید که قصد خروج از اکانت خود دارید؟</div>
-                    <hr color="#517192">
-                    <button class="dropdown-btn" id="myDIV">پاک کردن اکانت</button>
-                    <div class="sty" id="hide">آیا مطمعن هستید که قصد پاک کردن حساب کاربری خود را دارید؟</div>
+                    <button style="text-align: right;" class="dropdown"
+                        onclick="document.getElementById('id03').style.display='block'">خروج</button>
                     <hr color="#517192">
                 </ul>
             </div>
             <div class="navmobile__bottom btngroup --full">
-                <div class="btn --transparent --line"><a href="/index.html">صفحه اصلی</a></div>
-                <div class="btn book-demo"><a href="#calendly"><strong>Get Started</strong></a></div>
+                <button style="width: 160px; height: 40px;"
+                        class="bn631-hover bn20" onclick="document.getElementById('id01').style.display='block'">تغییر
+                        مشخصات
+                        کاربری</button>
             </div>
+            <div class="btn book-demo"><a href="#calendly"><strong>Get Started</strong></a></div>
+        </div>
         </div>
     </nav>
     <div class="wrapper">
@@ -81,20 +86,20 @@
                             <ul class="schero__content-form btngroup">
                                 <li>
                                     <button style="width: 160px; height: 40px;" class="bn632-hover bn20"
-                                            onclick="document.getElementById('id03').style.display='block'">خروج</button>
-                                        <button style="width: 160px; height: 40px;" class="bn632-hover bn20"
-                                            onclick="document.getElementById('id02').style.display='block'">پاک کردن
-                                            حساب کاربری</button>
-                                        <button style="width: 160px; height: 40px;" class="bn631-hover bn20"
-                                            onclick="document.getElementById('id01').style.display='block'">تغییر مشخصات
-                                            کاربری</button>
-                                    </div>
-                                </li>
-                            </ul>
+                                        onclick="document.getElementById('id03').style.display='block'">خروج</button>
+                                    <button style="width: 160px; height: 40px;" class="bn632-hover bn20"
+                                        onclick="document.getElementById('id02').style.display='block'">پاک کردن
+                                        حساب کاربری</button>
+                                    <button style="width: 160px; height: 40px;" class="bn631-hover bn20"
+                                        onclick="document.getElementById('id01').style.display='block'">تغییر مشخصات
+                                        کاربری</button>
                         </div>
+                        </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+    </div>
     </div>
     </header>
     <div class="content">
@@ -280,11 +285,12 @@
                             title="Close Modal">&times;</span>
                         <h4 style="margin-top: 35px; margin-bottom: 35px;">آیا مطمعن هستید که قصد پاک کردن حساب کاربری
                             خود را دارید؟</h4>
-                            <input id="InputDeleteUser" type="text" placeholder="لطفا نام کاربری خود را وارد کنید">
-                            <button id="btnDeleteUserSendCode" class="w3-button w3-block w3-green w3-section w3-padding"
+                        <input id="InputDeleteUser" type="text" placeholder="لطفا نام کاربری خود را وارد کنید">
+                        <button id="btnDeleteUserSendCode" class="w3-button w3-block w3-green w3-section w3-padding"
                             style="width: 200px; margin: auto;" type="submit">ارسال کد تایید</button>
-                            <input id="InputDeleteUserRemember" type="text" placeholder="نام کاربری خود را دوباره وارد کنید">
-                            <input id="InputCodeDeleteUser" type="password" placeholder="کد را وارد کنید">
+                        <input id="InputDeleteUserRemember" type="text"
+                            placeholder="نام کاربری خود را دوباره وارد کنید">
+                        <input id="InputCodeDeleteUser" type="password" placeholder="کد را وارد کنید">
                     </div>
                     <button id="btnDeleteUser" class="w3-button w3-block w3-green w3-section w3-padding"
                         style="width: 200px; margin: auto;" type="submit">پاک کردن</button>
@@ -301,10 +307,11 @@
                             <span onclick="document.getElementById('id03').style.display='none'"
                                 class="w3-button w3-xlarge w3-hover-red w3-display-topright"
                                 title="Close Modal">&times;</span>
-                            <h4 style="margin-top: 35px; margin-bottom: 35px;">آیا مطمعن هستید که قصد خروج از اکانت خود دارید؟</h4>
+                            <h4 style="margin-top: 35px; margin-bottom: 35px;">آیا مطمعن هستید که قصد خروج از اکانت خود
+                                دارید؟</h4>
                         </div>
                         <button id="logout" class="w3-button w3-block w3-green w3-section w3-padding"
-                            style="width: 200px; margin-right: 185px;" type="submit">خروج</button>
+                            style="width: 200px;" type="submit">خروج</button>
                     </div>
                 </div>
 </body>

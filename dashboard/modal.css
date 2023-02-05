@@ -362,6 +362,9 @@ a {
     cursor: pointer;
     white-space: nowrap;
 }
+.w3-button.w3-block.w3-green.w3-section.w3-padding{
+    margin-right: 185px;
+}
 
 .w3-btn:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
@@ -858,7 +861,7 @@ a {
 
 @media (max-width:600px) {
     .w3-modal-content {
-        margin: 0 10px;
+        margin: 100px 10px 50px;
         width: auto !important
     }
 
@@ -886,13 +889,17 @@ a {
         text-align: center
     }
 
+    .w3-button.w3-block.w3-green.w3-section.w3-padding{
+        margin-right: 90px;
+    }
+
     .w3-dropdown-hover.w3-mobile,
     .w3-dropdown-hover.w3-mobile .w3-btn,
     .w3-dropdown-hover.w3-mobile .w3-button,
     .w3-dropdown-click.w3-mobile,
     .w3-dropdown-click.w3-mobile .w3-btn,
     .w3-dropdown-click.w3-mobile .w3-button {
-        width: 100%
+        width: 100%;
     }
 }
 
