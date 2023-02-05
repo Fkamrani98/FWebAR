@@ -2,7 +2,7 @@
 <html dir="rtl" lang="fa-IR">
 
 <head>
-    <title>shawl</title>
+    <title>Scarf</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -16,8 +16,8 @@
     <link href="./dashboard/black-dashboard.css?v=1.0.0" rel="stylesheet" />
     <link href="./dashboard/nucleo-icons.css" rel="stylesheet" />
 
-
     <script defer="" src="./js/cacheme-main-528d64d23ea1fe262bb9.js"></script>
+
     <style>
         a {
             text-decoration: none;
@@ -50,7 +50,7 @@
             right: 0px;
             z-index: -1;
             height: 100%;
-            width: 700%;
+            width: 540%;
             filter: blur(30px);
             transform: scale(1.3);
             background: linear-gradient(90deg, #00bcff, #814bf6);
@@ -66,7 +66,7 @@
             right: 0px;
             z-index: -1;
             height: 100%;
-            width: 700%;
+            width: 540%;
             filter: blur(30px);
             transform: scale(1.3);
             background: linear-gradient(90deg, #814bf6, #00bcff);
@@ -91,9 +91,35 @@
         .font-icon-detail:hover img {
             transform: scale(1.1);
         }
-        
+
         .font-icon-detail-2:hover img {
             transform: scale(1.1);
+        }
+
+
+        @media screen and (max-width: 991px) {
+            .glow:after {
+                width: 100%;
+                height: 280%;
+            }
+
+            .glow2:after {
+                width: 100%;
+                height: 280%;
+            }
+
+        }
+
+        @media screen and (max-width: 481px) {
+            .glow:after {
+                width: 100%;
+                height: 280%;
+            }
+
+            .glow2:after {
+                width: 100%;
+                height: 280%;
+            }
         }
     </style>
 </head>
@@ -106,34 +132,35 @@
                         class="navmobile__button-line2"></span></div>
                 <ul class="navmobile__menu">
                     <hr color="#517192">
-                    <a href="/index.html"><button class="dropdown-btn" style="text-align: right;">صفحه
+                    <a href="index.html" style="text-decoration: none;"><button class="dropdown-btn"
+                            style="text-align: right;">صفحه
                             اصلی</button></a>
                     <hr color="#517192">
+                    <a href="./login/index.html" style="text-decoration: none;"><button
+                            style="text-align: right; font-family: sans-serif;" class="dropdown-btn">ورود / ثبت
+                            نام</button></a>
+                    <hr color="#517192">
                     <button style="text-align: right;" class="dropdown-btn">شال</button>
-                    <div style="text-align: right;" class="dropdown-container">
-                        <div><a href="#">نخی</a></div>
-                        <div><a href="#">زمستانی</a></div>
-                        <div><a href="#">ساتن</a></div>
-                        <div><a href="#">حریر</a></div>
-                        <div><a href="#">ابریشم</a></div>
+                    <div style="text-align: right; text-decoration: none;" class="dropdown-container">
+                        <div><a style="text-decoration: none;" href="Shawl.html#nakhi_sh">نخی</a></div>
+                        <div><a style="text-decoration: none;" href="Shawl.html#zemestani">زمستانی</a></div>
+                        <div><a style="text-decoration: none;" href="Shawl.html#satan_sh">ساتن</a></div>
+                        <div><a style="text-decoration: none;" href="Shawl.html#harir_sh">حریر</a></div>
+                        <div><a style="text-decoration: none;" href="Shawl.html#abrisham_sh">ابریشم</a></div>
                     </div>
                     <hr color="#517192">
                     <button style="text-align: right;" class="dropdown-btn">روسری</button>
                     <div style="text-align: right;" class="dropdown-container">
-                        <div><a href="#">نخی</a></div>
-                        <div><a href="#">ساتن</a></div>
-                        <div><a href="#">حریر</a></div>
-                        <div><a href="#">ابریشم</a></div>
+                        <div><a style="text-decoration: none;" href="#nakhi_s">نخی</a></div>
+                        <div><a style="text-decoration: none;" href="#satan_s">ساتن</a></div>
+                        <div><a style="text-decoration: none;" href="#harir_s">حریر</a></div>
+                        <div><a style="text-decoration: none;" href="#abrisham_s">ابریشم</a></div>
                     </div>
-                    <hr color="#517192">
-                    <a href="./login/index.html"><button style="text-align: right;" class="dropdown-btn">ورود
-                        </button></a>
                     <hr color="#517192">
                 </ul>
             </div>
             <div class="navmobile__bottom btngroup --full">
-                <div class="btn --transparent --line"><a href="../index.html">ثبت نام</a></div>
-                <div class="btn --transparent --line"><a href="">داشبورد</a></div>
+                <div class="btn --transparent --line"><a href="./dashboard/index.html">داشبورد</a></div>
             </div>
         </div>
     </nav>
@@ -142,24 +169,24 @@
             <div class="container-fluid">
                 <div class="header__right">
                     <ul class="header__nav">
-                        <li><a style="text-decoration: none; color: #fff;" href="/index.html">صفحه اصلی</a></li>
+                        <li><a style="text-decoration: none; color: #fff;" href="index.html">صفحه اصلی</a></li>
                         <div class="dropdown">
                             <div class="dropbtn">روسری</div>
                             <div class="dropdown-content">
-                                <a href="#">نخی</a>
-                                <a href="#">ساتن</a>
-                                <a href="#">حریر</a>
-                                <a href="#">ابریشم</a>
+                                <a href="#nakhi_s">نخی</a>
+                                <a href="#satan_s">ساتن</a>
+                                <a href="#harir_s">حریر</a>
+                                <a href="#abrisham_s">ابریشم</a>
                             </div>
                         </div>
                         <div class="dropdown">
                             <div class="dropbtn">شال</div>
                             <div class="dropdown-content">
-                                <a href="#">نخی</a>
-                                <a href="#">زمستانی</a>
-                                <a href="#">ساتن</a>
-                                <a href="#">حریر</a>
-                                <a href="#">ابریشم</a>
+                                <a href="Shawl.html#nakhi_sh">نخی</a>
+                                <a href="Shawl.html#zemestani">زمستانی</a>
+                                <a href="Shawl.html#satan_sh">ساتن</a>
+                                <a href="Shawl.html#harir_sh">حریر</a>
+                                <a href="Shawl.html#abrisham_sh">ابریشم</a>
                             </div>
                         </div>
                         <li><a style="text-decoration: none; color: #fff;" href="login/index.html">ورود</a></li>
@@ -171,8 +198,8 @@
                             <div class="btn --small --transparent"><a style="text-decoration: none;" id="navbar-signin"
                                     href="login/index.html">ثبت
                                     نام</a></div>
-                                    <div><a href="/"><button
-                                        style="width: 100px; height: 40px;" class="bn632-hover bn20">داشبورد</button></a></div>
+                            <div><a href="/"><button style="width: 100px; height: 40px;"
+                                        class="bn632-hover bn20">داشبورد</button></a></div>
                         </div>
                     </div>
                 </div>
@@ -181,7 +208,7 @@
         <div class="content">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="head"> نخی </h1>
+                    <h1 id="nakhi_s" class="head"> نخی </h1>
                     <div class="card">
                         <div class="card-body all-icons">
                             <div class="row">
@@ -218,7 +245,7 @@
         <div class="content">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="head"> ساتن </h1>
+                    <h1 id="satan_s" class="head"> ساتن </h1>
                     <div class="card">
                         <div class="card-body all-icons">
                             <div class="row">
@@ -255,7 +282,7 @@
         <div class="content">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 style="border-left-color: #814bf6;" class="head"> حریر </h1>
+                    <h1 id="harir_s" style="border-left-color: #814bf6;" class="head"> حریر </h1>
                     <div class="card">
                         <div class="card-body all-icons">
                             <div class="row">
@@ -292,7 +319,7 @@
         <div class="content">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="head"> ابریشم </h1>
+                    <h1 id="abrisham_s" class="head"> ابریشم </h1>
                     <div class="card">
                         <div class="card-body all-icons">
                             <div class="row">
