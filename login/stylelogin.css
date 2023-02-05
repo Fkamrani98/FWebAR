@@ -1,4 +1,4 @@
-#submitlogin, #submitsms, #submitforget, #submitregister{
+#submitlogin, #submitsms, #submitforget, #submitregister, #submitSMSnew, #updateNewPassword{
   -webkit-appearance: none;
   appearance: none;
   outline: none;
@@ -27,7 +27,7 @@
   width: 250px;
   height: 350px;
   margin: 60px auto;
-  margin-top: 170px;
+  margin-top: 130px;
   perspective: 600px;
   text-align: left;
 }
@@ -180,7 +180,7 @@
 
 .face-bottom {
   height: 250px;
-  transform: rotateX(-90deg) translateZ(283px);
+  transform: rotateX(-90deg) translateZ(325px);
 }
 
 .nav {

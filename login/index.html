@@ -14,7 +14,9 @@
     <script defer="module" src="scriptlogin.js"></script>
     <script defer="" src="../js/cacheme-main-528d64d23ea1fe262bb9.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js" integrity="sha512-wT7uPE7tOP6w4o28u1DN775jYjHQApdBnib5Pho4RB0Pgd9y7eSkAV1BTqQydupYDB9GBhTcQQzyNMPMV3cAew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"
+        integrity="sha512-wT7uPE7tOP6w4o28u1DN775jYjHQApdBnib5Pho4RB0Pgd9y7eSkAV1BTqQydupYDB9GBhTcQQzyNMPMV3cAew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -32,8 +34,8 @@
             </div>
             <ul class="schero__content-form btngroup">
                 <li>
-                    <div class="but"><a href="/Shawl.html"><button class="bn632-hover bn20">شال</button></a><a href="/scarf.html"><button
-                                class="bn632-hover bn20">روسری</button></a></div>
+                    <div class="but"><a href="/Shawl.html"><button class="bn632-hover bn20">شال</button></a><a
+                            href="/Scarf.html"><button class="bn632-hover bn20">روسری</button></a></div>
                 </li>
             </ul>
         </div>
@@ -55,8 +57,8 @@
                             <ul class="schero__content-form btngroup">
                                 <li>
                                     <div><a href="/Shawl.html"><button class="bn632-hover bn20"
-                                                style="width: 100px; height: 40px;">شال</button></a><a href="/scarf.html"><button
-                                                style="width: 100px; height: 40px;"
+                                                style="width: 100px; height: 40px;">شال</button></a><a
+                                            href="/Scarf.html"><button style="width: 100px; height: 40px;"
                                                 class="bn632-hover bn20">روسری</button></a></div>
                                 </li>
                             </ul>
@@ -82,7 +84,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="face face-front">
+                <div style="height: 450px;" class="face face-front">
                     <div class="content">
                         <h2 style="margin-left: 160px;">ورود</h2>
                         <form onsubmit="event.preventDefault()">
@@ -101,16 +103,18 @@
                         </form>
                     </div>
                 </div>
-                <div style="text-align: right;" class="face face-back">
+                <div style="text-align: right; height: 450px;" class="face face-back">
                     <div class="content">
                         <h2>رمز عبور خود را فراموش کردید؟</h2>
                         <small>لطفا شماره خود و نام کابری را وارد کنید تا کد برای شما ارسال شود.</small>
                         <form onsubmit="event.preventDefault()">
                             <div class="field-wrapper">
-                                <input  id="InputUsernameForget" class="forget" type="tel" name="phone" placeholder="نام کاربری خود را وارد کنید">
+                                <input id="InputUsernameForget" class="forget" type="tel" name="phone"
+                                    placeholder="نام کاربری خود را وارد کنید">
                             </div>
                             <div class="field-wrapper">
-                                <input id="InputPhoneForget" class="forget" type="tel" name="phone" placeholder="*********09">
+                                <input id="InputPhoneForget" class="forget" type="tel" name="phone"
+                                    placeholder="*********09">
                             </div>
                             <div class="field-wrapper">
                                 <button id="submitforget">ارسال کد</button>
@@ -125,7 +129,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="face face-right">
+                <div style="height: 450px;" class="face face-right">
                     <div class="content">
                         <h2 style="margin-left: 140px;">ثبت نام</h2>
                         <form onsubmit="event.preventDefault()">
@@ -151,17 +155,17 @@
                         </form>
                     </div>
                 </div>
-                <div class="face face-left">
+                <div style="height: 450px; text-align: right;" class="face face-left">
                     <div class="content">
-                        <h2>رمز جدید</h2>
-                        <small>لطفا رمز رمز جدید خود را وارد کنید.</small>
+                        <h2 style="margin-bottom: 30px; margin-top: 30px;">رمز جدید</h2>
+                        <small style="margin-bottom: 50px;">لطفا رمز جدید خود را وارد کنید.</small>
                         <form onsubmit="event.preventDefault()">
                             <div class="field-wrapper">
-                                <input id="Newpassword" type="password" name="password"
+                                <input style="margin-bottom: 30px;" id="Newpassword" type="password" name="password"
                                     placeholder="رمز عبور ۸ کاراکتری" autocomplete="new-password" required>
                             </div>
                             <div class="field-wrapper">
-                                <input id="updateNewPassword" type="submit" onclick="showLogin()">
+                                <button id="updateNewPassword" onclick="showLogin()">تغییر رمز</button>
                             </div>
                         </form>
                     </div>
