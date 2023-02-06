@@ -6,7 +6,7 @@ const BTNsubmitsms = document.getElementById("submitsms");
 // todo forget
 const btnUpdateNewPassword = document.getElementById("updateNewPassword").value;
 // todo forget end
-const mainURL = "http://107.181.112.52:8080";
+const mainURL = "http://185.142.156.246:8080";
 let userAuth = null;
 const auth = Cookies.get("token");
 if (auth) {

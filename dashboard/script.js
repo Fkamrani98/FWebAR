@@ -1,4 +1,4 @@
-const mainURL = "http://107.181.112.52:8080";
+const mainURL = "http://185.142.156.246:8080";
 const btnDeleteUser = document.getElementById("btnDeleteUser");
 const btnDeleteUserSendCode = document.getElementById("btnDeleteUserSendCode");
 const auth = Cookies.get("token");
