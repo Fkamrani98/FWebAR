@@ -21,6 +21,27 @@
         integrity="sha512-wT7uPE7tOP6w4o28u1DN775jYjHQApdBnib5Pho4RB0Pgd9y7eSkAV1BTqQydupYDB9GBhTcQQzyNMPMV3cAew=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer="" src="../js/cacheme-main-528d64d23ea1fe262bb9.js"></script>
+
+    <style>
+        a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+            font: 1em sans-serif;
+        }
+
+        button {
+            text-decoration: none;
+            font: 1em sans-serif;
+        }
+
+        .dropdown-content {
+            text-decoration: none;
+        }
+
+        .dropdown-content a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,35 +60,38 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div style="text-align: right;" class="dropdown-container">
-                        <div><a href="../Shawl.html#nakhi_sh">نخی</a></div>
-                        <div><a href="../Shawl.html#zemestani">زمستانی</a></div>
-                        <div><a href="../Shawl.html#satan_sh">ساتن</a></div>
-                        <div><a href="../Shawl.html#harir_sh">حریر</a></div>
-                        <div><a href="../Shawl.html#abrisham_sh">ابریشم</a></div>
+                        <div><a style="text-decoration: none;" href="../Shawl.html#nakhi_sh">نخی</a></div>
+                        <div><a style="text-decoration: none;" href="../Shawl.html#zemestani">زمستانی</a></div>
+                        <div><a style="text-decoration: none;" href="../Shawl.html#satan_sh">ساتن</a></div>
+                        <div><a style="text-decoration: none;" href="../Shawl.html#harir_sh">حریر</a></div>
+                        <div><a style="text-decoration: none;" href="../Shawl.html#abrisham_sh">ابریشم</a></div>
                     </div>
                     <hr color="#517192">
                     <button style="text-align: right; font-family: sans-serif;" class="dropdown-btn">روسری
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div style="text-align: right;" class="dropdown-container">
-                        <div><a href="../Scarf.html#nakhi_s">نخی</a></div>
-                        <div><a href="../Scarf.html#satan_s">ساتن</a></div>
-                        <div><a href="../Scarf.html#harir_s">حریر</a></div>
-                        <div><a href="../Scarf.html#abrisham_s">ابریشم</a></div>
+                        <div><a style="text-decoration: none;" href="../Scarf.html#nakhi_s">نخی</a></div>
+                        <div><a style="text-decoration: none;" href="../Scarf.html#satan_s">ساتن</a></div>
+                        <div><a style="text-decoration: none;" href="../Scarf.html#harir_s">حریر</a></div>
+                        <div><a style="text-decoration: none;" href="../Scarf.html#abrisham_s">ابریشم</a></div>
                     </div>
                     <hr color="#517192">
-                    <button style="text-align: right;" class="dropdown"
+                    <button style="text-align: right; margin-right:0px;" class="dropdown" id="logout"
                         onclick="document.getElementById('id03').style.display='block'">خروج</button>
                     <hr color="#517192">
                 </ul>
                 <div class="navmobile__bottom btngroup --full">
-                    <button style="width: 160px; height: 40px; margin-right: 10px; margin-top: 250px;"
-                            class="bn631-hover bn20" onclick="document.getElementById('id01').style.display='block'">تغییر
-                            مشخصات
-                            کاربری</button>
+                    <button
+                        style="width: 160px; height: 40px; margin-right: 0px; margin-top: 200px; margin-bottom: 50px;"
+                        class="bn631-hover bn20" onclick="document.getElementById('id01').style.display='block'">تغییر
+                        مشخصات
+                        کاربری</button>
+                    <button style="width: 160px; height: 40px;" class="bn632-hover bn20"
+                        onclick="document.getElementById('id02').style.display='block'">پاک کردن
+                        حساب کاربری</button>
                 </div>
             </div>
-            <div class="btn book-demo"><a href="#calendly"><strong>Get Started</strong></a></div>
         </div>
         </div>
     </nav>
@@ -76,8 +100,27 @@
             <div class="container-fluid">
                 <div class="header__right">
                     <ul class="header__nav">
-                        <li><a class="active" href="../index.html">Home</a></li>
-                        <li><a class="active">sign out</a></li>
+                        <li><a style="text-decoration: none; color: #fff; font-size: 1.3rem; width: 160px;"
+                                href="../index.html">صفحه اصلی</a></li>
+                        <div class="dropdown">
+                            <div class="dropbtn">روسری</div>
+                            <div class="dropdown-content">
+                                <a href="../Scarf.html#nakhi_s">نخی</a>
+                                <a href="../Scarf.html#satan_s">ساتن</a>
+                                <a href="../Scarf.html#harir_s">حریر</a>
+                                <a href="../Scarf.html#abrisham_s">ابریشم</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropbtn">شال</div>
+                            <div class="dropdown-content">
+                                <a href="../Shawl.html#nakhi_sh">نخی</a>
+                                <a href="../Shawl.html#zemestani">زمستانی</a>
+                                <a href="../Shawl.html#satan_sh">ساتن</a>
+                                <a href="../Shawl.html#harir_sh">حریر</a>
+                                <a href="../Shawl.html#abrisham_sh">ابریشم</a>
+                            </div>
+                        </div>
                     </ul>
                     <div class="header__divide"></div>
                     <div class="header__btnmenu"><span></span><span></span><span></span></div>
@@ -249,7 +292,6 @@
                         class="w3-circle w3-margin-top">
                     <h4>لطفا مقادیری که میخواهید تغییر دهید و تلفن همراه را پر کنید.</h4>
                 </div>
-
                 <form class="w3-container" action="">
                     <div class="w3-section">
                         <label><b>ایمیل</b></label>
@@ -263,13 +305,12 @@
                             name="psw" required>
                         <label><b>شماره موبایل</b></label>
                         <input class="w3-input w3-border" type="tel" name="phone" placeholder="*********09" required>
-                        <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">ارسال
+                        <button class="w3-button w3-block w3-green w3-section w2-padding" type="submit">ارسال
                             کد</button>
                     </div>
-
-                    <h5 style="margin-left: 155px;">لطفا کد پیامک شده را وارد کنید.</h5>
+                    <h5 style="margin-left: 120px;">لطفا کد پیامک شده را وارد کنید.</h5>
                     <input class="w3-input w3-border" type="password" name="phone" placeholder="*****" required>
-                    <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">ثبت</button>
+                    <button class="w3-button w3-block w3-green w3-section w2-padding" type="submit">ثبت</button>
             </div>
         </div>
         <div class="buttmodal">
@@ -315,7 +356,7 @@
                     </div>
                 </div>
 </body>
-<!-- <script src="script.js"></script> -->
+<script src="script.js"></script>
 <script>
     var dropdown = document.getElementsByClassName("dropdown-btn");
     var i;

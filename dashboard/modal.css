@@ -362,8 +362,13 @@ a {
     cursor: pointer;
     white-space: nowrap;
 }
+
+.w3-button.w3-block.w3-green.w3-section.w2-padding{
+    margin-left: 0px;
+}
+
 .w3-button.w3-block.w3-green.w3-section.w3-padding{
-    margin-right: 185px;
+    margin-right: 200px;
 }
 
 .w3-btn:hover {
@@ -890,6 +895,10 @@ a {
     }
 
     .w3-button.w3-block.w3-green.w3-section.w3-padding{
+        margin-right: 0px;
+    }
+
+    #logout{
         margin-right: 90px;
     }
 
