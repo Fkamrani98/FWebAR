@@ -122,6 +122,10 @@
                 height: 280%;
             }
         }
+
+        img {
+            border-radius: 20px;
+        }
     </style>
 </head>
 
@@ -158,20 +162,42 @@
                         <div><a style="text-decoration: none;" href="#abrisham_s">ابریشم</a></div>
                     </div>
                     <hr color="#517192">
+                    <button style="text-align: right; margin-right:0px;" class="dropdown" id="logout"
+                        onclick="document.getElementById('id03').style.display='block'">نظرسنجی</button>
+                    <hr color="#517192">
                 </ul>
+                <div class="buttmodal">
+                    <div id="id03" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px; border-width: 3px;
+                        border-style: solid;
+                        border-width: 2px;
+                border-style: solid;
+                border-image: linear-gradient(to right, #00bcff, darkorchid) 1;">
+                            <div class="w3-center"><br>
+                                <span onclick="document.getElementById('id03').style.display='none'"
+                                    class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                                    title="Close Modal">&times;</span>
+                                <h5 style="margin-top: 30px;">لطفاً برای بهبود عملکرد سایت به ما کمک کنید و در نظرسنجی
+                                    شرکت کنید.</h5>
+                                <a href="https://app.epoll.pro/e/o/MDQwNjUy"><img src="QRcode.JPG" alt="QRcode"
+                                        style="width: 200px; height: 200px; border-radius: 20px; margin:left; margin-top: 30px; margin-bottom: 30px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navmobile__bottom btngroup --full">
+                    <div class="btn --transparent --line"><a href="./dashboard/index.html">داشبورد</a></div>
+                </div>
             </div>
-            <div class="navmobile__bottom btngroup --full">
-                <div class="btn --transparent --line"><a href="./dashboard/index.html">داشبورد</a></div>
-            </div>
-        </div>
     </nav>
     <div class="wrapper">
         <header class="header">
             <div class="container-fluid">
                 <div class="header__right">
                     <ul class="header__nav">
-                        <li><strong><a style="text-decoration: none; color: #fff; font-size: 1.9rem; width: 160px; margin-top: 2px;"
-                                href="../index.html">صفحه اصلی</a></strong></li>
+                        <li><strong><a
+                                    style="text-decoration: none; color: #fff; font-size: 1.9rem; width: 160px; margin-top: 2px;"
+                                    href="../index.html">صفحه اصلی</a></strong></li>
                         <div class="dropdown">
                             <div class="dropbtn" style="margin-top: 2px;">روسری</div>
                             <div class="dropdown-content">
@@ -191,14 +217,18 @@
                                 <a href="Shawl.html#abrisham_sh">ابریشم</a>
                             </div>
                         </div>
-                        <li><a style="text-decoration: none; color: #fff; font-size: 1.9rem;" href="login/index.html">ورود</a></li>
+                        <li><a style="text-decoration: none; color: #fff; font-size: 1.9rem;"
+                                href="login/index.html">ورود</a></li>
+                        <button style="text-align: right; margin-right:0px; text-decoration: none;" class="dropdown"
+                            id="logout" onclick="document.getElementById('id04').style.display='block'">نظرسنجی</button>
                     </ul>
                     <div class="header__divide"></div>
                     <div class="header__btnmenu"><span></span><span></span><span></span></div>
                     <div class="header__login">
                         <div class="btngroup">
-                            <div class="btn --small --transparent"><a style="text-decoration: none; font-size: 1.9rem; margin-top: 2px;" id="navbar-signin"
-                                    href="login/index.html">ثبت
+                            <div class="btn --small --transparent"><a
+                                    style="text-decoration: none; font-size: 1.9rem; margin-top: 2px;"
+                                    id="navbar-signin" href="login/index.html">ثبت
                                     نام</a></div>
                             <div><a href="./dashboard/index.html"><button style="width: 100px; height: 40px;"
                                         class="bn632-hover bn20">داشبورد</button></a></div>
@@ -354,7 +384,25 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="buttmodal">
+                <div id="id04" class="w3-modal">
+                    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px; border-width: 3px;
+                    border-style: solid;
+                    border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(to right, #00bcff, darkorchid) 1;">
+                        <div class="w3-center"><br>
+                            <span onclick="document.getElementById('id04').style.display='none'"
+                                class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                                title="Close Modal">&times;</span>
+                            <h5 style="margin-top: 30px;">لطفاً برای بهبود عملکرد سایت به ما کمک کنید و در نظرسنجی شرکت
+                                کنید.</h5>
+                            <a href="https://app.epoll.pro/e/o/MDQwNjUy"><img src="QRcode.JPG" alt="QRcode"
+                                    style="width: 200px; height: 200px; border-radius: 20px; margin:left; margin-top: 30px; margin-bottom: 30px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </body>
 <script>
     var dropdown = document.getElementsByClassName("dropdown-btn");
