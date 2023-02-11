@@ -7,18 +7,11 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
-body {
-    margin: 0
-}
-
 article,
 aside,
 details,
 figcaption,
 figure,
-footer,
-header,
-main,
 menu,
 section {
     display: block
@@ -71,11 +64,6 @@ strong {
 
 dfn {
     font-style: italic
-}
-
-mark {
-    background: #ff0;
-    color: #000
 }
 
 small {
@@ -208,16 +196,6 @@ textarea {
 }
 
 /* End extract */
-html,
-body {
-    font-family: Verdana, sans-serif;
-    font-size: 15px;
-    line-height: 1.5
-}
-
-html {
-    overflow-x: hidden
-}
 
 h1 {
     font-size: 36px
