@@ -17,10 +17,9 @@
     <link href="./dashboard/nucleo-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="./dashboard/modal.css">
 
-
     <script defer="" src="./js/cacheme-main-528d64d23ea1fe262bb9.js"></script>
     <style>
-        a {
+        div a {
             text-decoration: none;
             color: rgba(255, 255, 255, 0.6);
             font: 1em sans-serif;
@@ -146,34 +145,57 @@
                     <hr color="#517192">
                     <button style="text-align: right;" class="dropdown-btn">شال</button>
                     <div style="text-align: right;" class="dropdown-container">
-                        <div><a href="#nakhi_sh">نخی</a></div>
-                        <div><a href="#zemestani">زمستانی</a></div>
-                        <div><a href="#satan_sh">ساتن</a></div>
-                        <div><a href="#harir_sh">حریر</a></div>
-                        <div><a href="#abrisham_sh">ابریشم</a></div>
+                        <div><a style="text-decoration: none;" href="#nakhi_sh">نخی</a></div>
+                        <div><a style="text-decoration: none;" href="#zemestani">زمستانی</a></div>
+                        <div><a style="text-decoration: none;" href="#satan_sh">ساتن</a></div>
+                        <div><a style="text-decoration: none;" href="#harir_sh">حریر</a></div>
+                        <div><a style="text-decoration: none;" href="#abrisham_sh">ابریشم</a></div>
                     </div>
                     <hr color="#517192">
                     <button style="text-align: right;" class="dropdown-btn">روسری</button>
                     <div style="text-align: right;" class="dropdown-container">
-                        <div><a href="Scarf.html#nakhi_s">نخی</a></div>
-                        <div><a href="Scarf.html#satan_s">ساتن</a></div>
-                        <div><a href="Scarf.html#harir_s">حریر</a></div>
-                        <div><a href="Scarf.html#abrisham_s">ابریشم</a></div>
+                        <div><a style="text-decoration: none;" href="Scarf.html#nakhi_s">نخی</a></div>
+                        <div><a style="text-decoration: none;" href="Scarf.html#satan_s">ساتن</a></div>
+                        <div><a style="text-decoration: none;" href="Scarf.html#harir_s">حریر</a></div>
+                        <div><a style="text-decoration: none;" href="Scarf.html#abrisham_s">ابریشم</a></div>
                     </div>
                     <hr color="#517192">
+                    <button style="text-align: right; margin-right:0px;" class="dropdown" id="logout"
+                        onclick="document.getElementById('id03').style.display='block'">نظرسنجی</button>
+                    <hr color="#517192">
                 </ul>
+                <div class="buttmodal">
+                    <div id="id03" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px; border-width: 3px;
+                        border-style: solid;
+                        border-width: 2px;
+                border-style: solid;
+                border-image: linear-gradient(to right, #00bcff, darkorchid) 1;">
+                            <div class="w3-center"><br>
+                                <span onclick="document.getElementById('id03').style.display='none'"
+                                    class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                                    title="Close Modal">&times;</span>
+                                <h5 style="margin-top: 30px;">لطفاً برای بهبود عملکرد سایت به ما کمک کنید و در نظرسنجی
+                                    شرکت کنید.</h5>
+                                <a href="https://app.epoll.pro/e/o/MDQwNjUy"><img src="QRcode.JPG" alt="QRcode"
+                                        style="width: 200px; height: 200px; border-radius: 20px; margin:left; margin-top: 30px; margin-bottom: 30px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="navmobile__bottom btngroup --full">
                 <div class="btn --transparent --line"><a href="./dashboard/index.html">داشبورد</a></div>
             </div>
-        </div>
     </nav>
     <div class="wrapper">
         <header class="header">
             <div class="container-fluid">
                 <div class="header__right">
                     <ul class="header__nav">
-                        <li><a style="text-decoration: none; color: #fff;" href="index.html">صفحه اصلی</a></li>
+                        <li><strong><a
+                                    style="text-decoration: none; color: #fff; font-size: 1.9rem; width: 160px; margin-top: 2px;"
+                                    href="../index.html">صفحه اصلی</a></strong></li>
                         <div class="dropdown">
                             <div class="dropbtn">روسری</div>
                             <div class="dropdown-content">
@@ -193,14 +215,18 @@
                                 <a href="#abrisham_sh">ابریشم</a>
                             </div>
                         </div>
-                        <li><a style="text-decoration: none; color: #fff;" href="login/index.html">ورود</a></li>
+                        <li><a style="text-decoration: none; color: #fff; font-size: 1.9rem;"
+                                href="login/index.html">ورود</a></li>
+                        <button style="text-align: right; margin-right:0px; text-decoration: none;" class="dropdown"
+                            id="logout" onclick="document.getElementById('id04').style.display='block'">نظرسنجی</button>
                     </ul>
                     <div class="header__divide"></div>
                     <div class="header__btnmenu"><span></span><span></span><span></span></div>
                     <div class="header__login">
                         <div class="btngroup">
-                            <div class="btn --small --transparent"><a style="text-decoration: none;" id="navbar-signin"
-                                    href="login/index.html">ثبت
+                            <div class="btn --small --transparent"><a
+                                    style="text-decoration: none; font-size: 1.9rem; margin-top: 2px;"
+                                    id="navbar-signin" href="login/index.html">ثبت
                                     نام</a></div>
                             <div><a href="./dashboard/index.html"><button style="width: 100px; height: 40px;"
                                         class="bn632-hover bn20">داشبورد</button></a></div>
@@ -393,7 +419,25 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="buttmodal">
+                <div id="id04" class="w3-modal">
+                    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px; border-width: 3px;
+                    border-style: solid;
+                    border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(to right, #00bcff, darkorchid) 1;">
+                        <div class="w3-center"><br>
+                            <span onclick="document.getElementById('id04').style.display='none'"
+                                class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                                title="Close Modal">&times;</span>
+                            <h5 style="margin-top: 30px;">لطفاً برای بهبود عملکرد سایت به ما کمک کنید و در نظرسنجی شرکت
+                                کنید.</h5>
+                            <a href="https://app.epoll.pro/e/o/MDQwNjUy"><img src="QRcode.JPG" alt="QRcode"
+                                    style="width: 200px; height: 200px; border-radius: 20px; margin:left; margin-top: 30px; margin-bottom: 30px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </body>
 <script>
     var dropdown = document.getElementsByClassName("dropdown-btn");
