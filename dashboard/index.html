@@ -80,18 +80,41 @@
                     <button style="text-align: right; margin-right:0px;" class="dropdown" id="logout"
                         onclick="document.getElementById('id03').style.display='block'">خروج</button>
                     <hr color="#517192">
+                    <button style="text-align: right; margin-right:0px;" class="dropdown" id="logout"
+                        onclick="document.getElementById('id03').style.display='block'">نظرسنجی</button>
+                    <hr color="#517192">
                 </ul>
-                <div class="navmobile__bottom btngroup --full">
-                    <button
-                        style="width: 160px; height: 40px; margin-right: 0px; margin-top: 200px; margin-bottom: 50px;"
-                        class="bn631-hover bn20" onclick="document.getElementById('id01').style.display='block'">تغییر
-                        مشخصات
-                        کاربری</button>
-                    <button style="width: 160px; height: 40px;" class="bn632-hover bn20"
-                        onclick="document.getElementById('id02').style.display='block'">پاک کردن
-                        حساب کاربری</button>
+                <div class="buttmodal">
+                    <div id="id03" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px; border-width: 3px;
+                        border-style: solid;
+                        border-width: 2px;
+                border-style: solid;
+                border-image: linear-gradient(to right, #00bcff, darkorchid) 1;">
+                            <div class="w3-center"><br>
+                                <span onclick="document.getElementById('id03').style.display='none'"
+                                    class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                                    title="Close Modal">&times;</span>
+                                <h5 style="margin-top: 30px;">لطفاً برای بهبود عملکرد سایت به ما کمک کنید و در نظرسنجی
+                                    شرکت کنید.</h5>
+                                <a href="https://app.epoll.pro/e/o/MDQwNjUy"><img src="../QRcode.jpg" alt="QRcode"
+                                        style="width: 200px; height: 200px; border-radius: 20px; margin:left; margin-top: 30px; margin-bottom: 30px;"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            </ul>
+            <div class="navmobile__bottom btngroup --full">
+                <button style="width: 160px; height: 40px; margin-right: 0px; margin-top: 200px; margin-bottom: 50px;"
+                    class="bn631-hover bn20" onclick="document.getElementById('id01').style.display='block'">تغییر
+                    مشخصات
+                    کاربری</button>
+                <button style="font-size: 1.5rem; width: 160px; height: 40px;" class="bn632-hover bn20"
+                    onclick="document.getElementById('id02').style.display='block'">پاک کردن
+                    حساب کاربری</button>
+            </div>
+        </div>
         </div>
         </div>
     </nav>
@@ -100,8 +123,9 @@
             <div class="container-fluid">
                 <div class="header__right">
                     <ul class="header__nav">
-                        <li><a style="text-decoration: none; color: #fff; font-size: 1.3rem; width: 160px;"
-                                href="../index.html">صفحه اصلی</a></li>
+                        <li><strong><a
+                                    style="text-decoration: none; color: #fff; font-size: 1.9rem; width: 160px; margin-top: 2px;"
+                                    href="../index.html">صفحه اصلی</a></strong></li>
                         <div class="dropdown">
                             <div class="dropbtn">روسری</div>
                             <div class="dropdown-content">
@@ -121,6 +145,8 @@
                                 <a href="../Shawl.html#abrisham_sh">ابریشم</a>
                             </div>
                         </div>
+                        <button style="text-align: right; margin-right:0px; text-decoration: none;" class="dropdown"
+                            id="logout" onclick="document.getElementById('id04').style.display='block'">نظرسنجی</button>
                     </ul>
                     <div class="header__divide"></div>
                     <div class="header__btnmenu"><span></span><span></span><span></span></div>
@@ -130,7 +156,8 @@
                                 <li>
                                     <button style="width: 160px; height: 40px;" class="bn632-hover bn20"
                                         onclick="document.getElementById('id03').style.display='block'">خروج</button>
-                                    <button style="width: 160px; height: 40px;" class="bn632-hover bn20"
+                                    <button style="font-size: 1.5rem; width: 160px; height: 40px;"
+                                        class="bn632-hover bn20"
                                         onclick="document.getElementById('id02').style.display='block'">پاک کردن
                                         حساب کاربری</button>
                                     <button style="width: 160px; height: 40px;" class="bn631-hover bn20"
@@ -276,6 +303,25 @@
                     </div>
                 </div>
             </div>
+            <div class="buttmodal">
+                <div id="id04" class="w3-modal">
+                    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px; border-width: 3px;
+                    border-style: solid;
+                    border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(to right, #00bcff, darkorchid) 1;">
+                        <div class="w3-center"><br>
+                            <span onclick="document.getElementById('id04').style.display='none'"
+                                class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                                title="Close Modal">&times;</span>
+                            <h5 style="margin-top: 30px;">لطفاً برای بهبود عملکرد سایت به ما کمک کنید و در نظرسنجی شرکت
+                                کنید.</h5>
+                            <a href="https://app.epoll.pro/e/o/MDQwNjUy"><img src="../QRcode.JPG" alt="QRcode"
+                                    style="width: 200px; height: 200px; border-radius: 20px; margin:left; margin-top: 30px; margin-bottom: 30px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="buttmodal">
@@ -356,7 +402,7 @@
                     </div>
                 </div>
 </body>
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
 <script>
     var dropdown = document.getElementsByClassName("dropdown-btn");
     var i;
