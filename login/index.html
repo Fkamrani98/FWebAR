@@ -18,7 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"
         integrity="sha512-wT7uPE7tOP6w4o28u1DN775jYjHQApdBnib5Pho4RB0Pgd9y7eSkAV1BTqQydupYDB9GBhTcQQzyNMPMV3cAew=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -32,7 +32,28 @@
                     <li onclick="showLogin()"><a>ورود</a></li>
                     <li onclick="showSignup()"><a>ثبت نام</a></li>
                     <li onclick="showForgotPassword()"><a>فراموشی رمز عبور</a></li>
+                    <li><button style="text-align: right; margin-right:0px;" class="dropdown" id="logout"
+                        onclick="document.getElementById('id03').style.display='block'">نظرسنجی</button></li>
                 </ul>
+                <div class="buttmodal">
+                    <div id="id03" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px; border-width: 3px;
+                      border-style: solid;
+                      border-width: 2px;
+              border-style: solid;
+              border-image: linear-gradient(to right, #00bcff, darkorchid) 1;">
+                            <div class="w3-center"><br>
+                                <span onclick="document.getElementById('id03').style.display='none'"
+                                    class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                                    title="Close Modal">&times;</span>
+                                <h5 style="margin-top: 30px;">لطفاً برای بهبود عملکرد سایت به ما کمک کنید و در نظرسنجی
+                                    شرکت کنید.</h5>
+                                <a href="https://app.epoll.pro/e/o/MDQwNjUy"><img src="../QRcode.jpg" alt="QRcode"
+                                        style="width: 200px; height: 200px; border-radius: 20px; margin:left; margin-top: 30px; margin-bottom: 30px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <ul class="schero__content-form btngroup">
                 <li>
@@ -58,7 +79,7 @@
                                 نام</a></li>
                         <li><a onclick="showForgotPassword()"
                                 style="text-decoration: none; color: #fff; font-size: 1.9rem;">فراموشی رمز عبور</a></li>
-                        <li><button style="font-family: sans-serif; margin-top: 20px;" class="dropdown" id="logout"
+                        <li><button style="font-family: sans-serif; margin-top: 23px;" class="dropdown" id="logout"
                                 onclick="document.getElementById('id04').style.display='block'">نظرسنجی</button></li>
                     </ul>
                     <div class="header__divide"></div>
@@ -92,7 +113,8 @@
                         <small style="margin-left: 30px;">لطفا کد پیامک شده را وارد کنید.</small>
                         <form onsubmit="event.preventDefault()">
                             <div class="field-wrapper">
-                                <input style="margin-top: -20px; font-size: 1.5rem;" id="InputActiveUser" type="text" placeholder="نام کاربری را مجدد وارد کنید">
+                                <input style="margin-top: -20px; font-size: 1.5rem;" id="InputActiveUser" type="text"
+                                    placeholder="نام کاربری را مجدد وارد کنید">
                                 <input id="InputSubmitSms" type="password" placeholder="کد">
                             </div>
                             <div class="field-wrapper">
@@ -137,7 +159,8 @@
                                 <button style="margin-top: -15;" id="submitforget">ارسال کد</button>
                                 <div class="field-wrapper">
                                     <h6 style="font-size: 12px; margin-top: -20;">لطفا کد پیامک شده را وارد کنید.</h6>
-                                    <input style="margin-top: -20;" id="CodeUpdateUser" type="password" placeholder="کد">
+                                    <input style="margin-top: -20;" id="CodeUpdateUser" type="password"
+                                        placeholder="کد">
                                 </div>
                             </div>
                             <div class="field-wrapper">
