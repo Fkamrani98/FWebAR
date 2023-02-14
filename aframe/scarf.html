@@ -27,13 +27,13 @@
             <a-entity zappar-head-mask="face:#my-face-tracker;"></a-entity>
 
             <!-- Include a 3D model inside our face tracker -->
-            <a-entity gltf-model="url(assets/scarf/scarf1.glb)" position="0.001, -4.5, 0"
+            <a-entity id="modelContainer" gltf-model="" position="0.001, -4.5, 0"
                 scale="12.4 10.3 15"></a-entity>
-            <a-entity gltf-model="url(assets/scarf/scarf2.glb)" position="0.001, -4.5, 0"
+            <a-entity id="modelContainer1" gltf-model="" position="0.001, -4.5, 0"
                 scale="12.4 10.3 15"></a-entity>
-            <a-entity gltf-model="url(assets/scarf/scarf3.glb)" position="0.001, -4.5, 0"
+            <a-entity id="modelContainer2" gltf-model="" position="0.001, -4.5, 0"
                 scale="12.4 10.3 15"></a-entity>
-            <a-entity gltf-model="url(assets/scarf/scarf4.glb)" position="0.001, -4.5, 0"
+            <a-entity id="modelContainer3" gltf-model="" position="0.001, -4.5, 0"
                 scale="12.4 10.3 15"></a-entity>
 
         </a-entity>
@@ -44,6 +44,34 @@
         </button>
     </div>
 </body>
+
+<script>
+    window.onload = function () {
+        let model = localStorage.getItem("model");
+        console.log("model", model);
+        switch (model) {
+            case "nakhi":
+                document
+                    .getElementById("modelContainer")
+                    .setAttribute("gltf-model", "./assets/scarf/scarf1.glb");
+                break;
+            case "satan":
+                document
+                    .getElementById("modelContainer1")
+                    .setAttribute("gltf-model", "./assets/scarf/scarf2.glb");
+                break;
+            case "harir":
+                document
+                    .getElementById("modelContainer2")
+                    .setAttribute("gltf-model", "./assets/scarf/scarf3.glb");
+                break;
+            case "abrisham":
+                document
+                    .getElementById("modelContainer3")
+                    .setAttribute("gltf-model", "./assets/scarf/scarf4.glb");
+                break;
+        }
+    };
 </script>
 
 </html>

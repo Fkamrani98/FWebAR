@@ -248,7 +248,8 @@
                                     <div class="glow">
                                         <div class="font-icon-detail">
                                             <img src="./img/scarf/scarf1.png" width="150px" height="150px">
-                                            <div><a href="./aframe/scarf.html"><button id="nakhi_s1_btn" class="bn632-hover bn20 s1"
+                                            <div><a href="./aframe/scarf.html"><button id="nakhi_s1"
+                                                        class="bn632-hover bn20 s1"
                                                         style="width: 100px; height: 40px;">امتحان کردن</button></a>
                                             </div>
                                         </div>
@@ -285,7 +286,8 @@
                                     <div class="glow">
                                         <div class="font-icon-detail">
                                             <img src="./img//scarf/scarf2.png" width="150px" height="150px">
-                                            <div><a href="./aframe/scarf.html"><button class="bn632-hover bn20"
+                                            <div><a href="./aframe/scarf.html"><button id="satan_s1"
+                                                        class="bn632-hover bn20"
                                                         style="width: 100px; height: 40px;">امتحان کردن</button></a>
                                             </div>
                                         </div>
@@ -322,7 +324,8 @@
                                     <div class="glow2">
                                         <div class="font-icon-detail-2">
                                             <img src="./img//scarf/scarf3.png" width="150px" height="150px">
-                                            <div><a href="./aframe/scarf.html"><button class="bn632-hover bn20"
+                                            <div><a href="./aframe/scarf.html"><button id="harir_s1"
+                                                        class="bn632-hover bn20"
                                                         style="width: 100px; height: 40px;">امتحان کردن</button></a>
                                             </div>
                                         </div>
@@ -359,7 +362,8 @@
                                     <div class="glow">
                                         <div class="font-icon-detail">
                                             <img src="./img/scarf/scarf4.png" width="150px" height="150px">
-                                            <div><a href="./aframe/scarf.html"><button class="bn632-hover bn20"
+                                            <div><a href="./aframe/scarf.html"><button id="abrisham_s1"
+                                                        class="bn632-hover bn20"
                                                         style="width: 100px; height: 40px;">امتحان کردن</button></a>
                                             </div>
                                         </div>
@@ -420,10 +424,22 @@
         });
     }
 
-document.getElementById('nakhi_s1_btn').onclick=function(){
-    localStorage.clear()
-    localStorage.setItem('model1','nakhi')
-}
+    document.getElementById('nakhi_s1').onclick = function () {
+        localStorage.clear();
+        localStorage.setItem('model', 'nakhi')
+    }
+    document.getElementById('satan_s1').onclick = function () {
+        localStorage.clear();
+        localStorage.setItem('model', 'satan')
+    }
+    document.getElementById('harir_s1').onclick = function () {
+        localStorage.clear();
+        localStorage.setItem('model', 'harir')
+    }
+    document.getElementById('abrisham_s1').onclick = function () {
+        localStorage.clear();
+        localStorage.setItem('model', 'abrisham')
+    }
 </script>
 
 </html>

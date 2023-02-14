@@ -27,11 +27,11 @@
             <a-entity zappar-head-mask="face:#my-face-tracker;"></a-entity>
 
             <!-- Include a 3D model inside our face tracker -->
-            <!-- <a-entity gltf-model="url(assets/shawl/shawl1.glb)" position="0, -1.4, 0.5" scale="0.9 1.07 1.1"></a-entity> -->
-            <!-- <a-entity gltf-model="url(assets/shawl/shawl2.glb)"  position="0.11, -10.9, 0" scale="8.8 9.5 13"></a-entity> -->
-            <!-- <a-entity gltf-model="url(assets/shawl/shawl3.glb)"  position="0.1, -10.9, 0" scale="11 9.5 13"></a-entity> -->
-            <!-- <a-entity gltf-model="url(assets/shawl/shawl4.glb)" position="0, -0.8, 0.5" scale="0.8 0.8 1.1"></a-entity> -->
-            <a-entity gltf-model="url(assets/shawl/shawl5.glb)" position="0, -0.8, 0.5" scale="0.8 0.8 1.1"></a-entity>
+            <a-entity id="modelContainer" gltf-model="" position="0, -1.4, 0.5" scale="0.9 1.07 1.1"></a-entity>
+            <a-entity id="modelContainer1" gltf-model="" position="0.11, -10.9, 0" scale="8.8 9.5 13"></a-entity>
+            <a-entity id="modelContainer2" gltf-model="" position="0.1, -10.9, 0" scale="11 9.5 13"></a-entity>
+            <a-entity id="modelContainer3" gltf-model="" position="0, -0.8, 0.5" scale="0.8 0.8 1.1"></a-entity>
+            <a-entity id="modelContainer4" gltf-model="" position="0, -0.8, 0.5" scale="0.8 0.8 1.1"></a-entity>
         </a-entity>
     </a-scene>
     <div class="snapshot-container">
@@ -40,5 +40,38 @@
         </button>
     </div>
 </body>
+<script>
+    window.onload = function () {
+        let model = localStorage.getItem("model");
+        console.log("model", model);
+        switch (model) {
+            case "nakhi":
+                document
+                    .getElementById("modelContainer")
+                    .setAttribute("gltf-model", "./assets/shawl/shawl1.glb");
+                break;
+            case "zemestani":
+                document
+                    .getElementById("modelContainer1")
+                    .setAttribute("gltf-model", "./assets/shawl/shawl2.glb");
+                break;
+            case "satan":
+                document
+                    .getElementById("modelContainer2")
+                    .setAttribute("gltf-model", "./assets/shawl/shawl3.glb");
+                break;
+            case "harir":
+                document
+                    .getElementById("modelContainer3")
+                    .setAttribute("gltf-model", "./assets/shawl/shawl4.glb");
+                break;
+            case "abrisham":
+                document
+                    .getElementById("modelContainer4")
+                    .setAttribute("gltf-model", "./assets/shawl/shawl5.glb");
+                break;
+        }
+    };
+</script>
 
 </html>
