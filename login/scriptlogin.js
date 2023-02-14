@@ -71,7 +71,13 @@ async function login() {
       window.location.href = "/dashboard/index.html";
     }
   } catch (error) {
-    console.log(error);
+    error.response.message = "نام کاربری یا رمز عبور را اشتباه وارد کردید.";
+    Swal.fire({
+      title: "نام کاربری یا رمز عبور اشتباه است لطفاً به مرحله قبل برگردید.",
+      icon: "warning",
+      timer: "10000",
+      showConfirmButton:false
+    });
   }
 }
 async function Register() {
@@ -90,7 +96,13 @@ async function Register() {
     });
     sendSMSactiveUser(usernameInput);
   } catch (error) {
-    console.log(error);
+    error.response.message = "نام کاربری یا شماره موبایل قبلا ثبت نام شده است",
+    Swal.fire({
+      title: " نام کاربری یا شماره موبایل قبلا ثبت نام شده است لطفاً به مرحله قبل برگردید.",
+      icon: "warning",
+      timer: "10000",
+      showConfirmButton:false
+    });
   }
 }
 
