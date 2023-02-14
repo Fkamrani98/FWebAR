@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="stylelogin.css">
+    <link rel="stylesheet" href="../dashboard/modal.css">
 
     <script defer="module" src="scriptlogin.js"></script>
     <script defer="" src="../js/cacheme-main-528d64d23ea1fe262bb9.js"></script>
@@ -50,10 +51,16 @@
             <div class="container-fluid">
                 <div class="header__right">
                     <ul class="header__nav">
-                        <li><a class="active" href="/index.html">صفحه اصلی</a></li>
-                        <li onclick="showLogin()"><a class="active">ورود</a></li>
-                        <li onclick="showSignup()"><a class="active">ثبت نام</a></li>
-                        <li onclick="showForgotPassword()"><a class="active">فراموشی رمز عبور</a></li>
+                        <li><a style="text-decoration: none; color: #fff; font-size: 1.9rem; width: 160px; margin-top: 2px;"
+                                href="../index.html">صفحه اصلی</a></li>
+                        <li><a onclick="showLogin()"
+                                style="text-decoration: none; color: #fff; font-size: 1.9rem;">ورود</a></li>
+                        <li><a onclick="showSignup()" style="text-decoration: none; color: #fff; font-size: 1.9rem;">ثبت
+                                نام</a></li>
+                        <li><a onclick="showForgotPassword()"
+                                style="text-decoration: none; color: #fff; font-size: 1.9rem;">فراموشی رمز عبور</a></li>
+                        <li><button style="font-family: sans-serif; margin-top: 20px;" class="dropdown" id="logout"
+                                onclick="document.getElementById('id04').style.display='block'">نظرسنجی</button></li>
                     </ul>
                     <div class="header__divide"></div>
                     <div class="header__btnmenu"><span></span><span></span><span></span></div>
@@ -83,14 +90,14 @@
                 <div class="face face-top">
                     <div class="content">
                         <h2 style="margin-left: 160px;">پیامک</h2>
-                        <small style="margin-left: 50px;">لطفا کد پیامک شده را وارد کنید.</small>
+                        <small style="margin-left: 30px;">لطفا کد پیامک شده را وارد کنید.</small>
                         <form onsubmit="event.preventDefault()">
                             <div class="field-wrapper">
-                                <input id="InputActiveUser" type="text" placeholder="نام کاربری را مجدد وارد کنید">
+                                <input style="margin-top: -20px; font-size: 1.5rem;" id="InputActiveUser" type="text" placeholder="نام کاربری را مجدد وارد کنید">
                                 <input id="InputSubmitSms" type="password" placeholder="کد">
                             </div>
                             <div class="field-wrapper">
-                                <button id="submitsms" onclick="showThankYou()">ورود</button>
+                                <button style="margin-top: -10px;" id="submitsms" onclick="showThankYou()">ورود</button>
                             </div>
                         </form>
                     </div>
@@ -128,10 +135,10 @@
                                     placeholder="*********09">
                             </div>
                             <div class="field-wrapper">
-                                <button id="submitforget">ارسال کد</button>
+                                <button style="margin-top: -15;" id="submitforget">ارسال کد</button>
                                 <div class="field-wrapper">
-                                    <h6 style="font-size: 12px;">لطفا کد پیامک شده را وارد کنید.</h6>
-                                    <input id="CodeUpdateUser" type="password" placeholder="کد">
+                                    <h6 style="font-size: 12px; margin-top: -20;">لطفا کد پیامک شده را وارد کنید.</h6>
+                                    <input style="margin-top: -20;" id="CodeUpdateUser" type="password" placeholder="کد">
                                 </div>
                             </div>
                             <div class="field-wrapper">
@@ -187,6 +194,25 @@
                             عملیات با موفقیت انجام شد!
                             <small>لطفاً برای ورود به پنل کاربری روی دکمه داشبورد کلیک کنید.</small>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttmodal">
+            <div id="id04" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px; border-width: 3px;
+                border-style: solid;
+                border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #00bcff, darkorchid) 1;">
+                    <div class="w3-center"><br>
+                        <span onclick="document.getElementById('id04').style.display='none'"
+                            class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                            title="Close Modal">&times;</span>
+                        <h5 style="margin-top: 30px;">لطفاً برای بهبود عملکرد سایت به ما کمک کنید و در نظرسنجی شرکت
+                            کنید.</h5>
+                        <a href="https://app.epoll.pro/e/o/MDQwNjUy"><img src="../QRcode.jpg" alt="QRcode"
+                                style="width: 200px; height: 200px; border-radius: 20px; margin:left; margin-top: 30px; margin-bottom: 30px;"></a>
                     </div>
                 </div>
             </div>
