@@ -141,6 +141,7 @@
 }
 
 .face .thank-you-msg:after {
+  margin-top: 30px;
   position: absolute;
   content: "";
   width: 50px;
