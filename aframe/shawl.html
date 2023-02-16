@@ -12,11 +12,9 @@
 </head>
 
 <body>
-    <a-scene>
+    <a-scene device-orientation-permission-ui="enabled: false">
         <!-- Ask user for camera permissions, display some text if permission is denied -->
         <a-entity zappar-permissions-ui id="permissions"></a-entity>
-        <!-- shows a full-page dialog that informs the user they're using an unsupported browser -->
-        <a-entity zappar-compatibility-ui id="compatibility"></a-entity>
 
         <a-camera zappar-camera="user-facing: true; user-camera-mirror-mode: poses" />
 
