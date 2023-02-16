@@ -8,13 +8,11 @@
     <meta charset="utf-8" />
     <title>WebARScarf</title>
     <link rel="stylesheet" href="./index.css">
-    <script src="./index.ts"></script>
 </head>
 
 <body>
     <a-scene device-orientation-permission-ui="enabled: false">
         <!-- Ask user for camera permissions, display some text if permission is denied -->
-        <a-entity zappar-permissions-ui id="permissions"></a-entity>        
         <a-camera zappar-camera="user-facing: true; user-camera-mirror-mode: poses" />
 
         <!-- Setup our face tracker -->
